@@ -26,4 +26,4 @@ install:
   - git clone https://github.com/MSeifert04/iteration_utilities.git
 
 script:
-  - yes "" | asv run
+  - yes "" | asv run ALL
