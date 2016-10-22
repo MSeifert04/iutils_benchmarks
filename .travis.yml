@@ -26,4 +26,12 @@ install:
   - git clone https://github.com/MSeifert04/iteration_utilities.git
 
 script:
-  - yes "" | asv run ALL
+  - yes "" | asv run
+
+after_success:
+  - git config user.name "MSeifert04"
+  - git config user.email "michaelseifert04@yahoo.de"
+  - git branch test
+  - git add -A
+  - git commit -m "New results"
+  - git push origin test
