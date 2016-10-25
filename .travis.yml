@@ -34,10 +34,10 @@ install:
 script:
   - yes "" | asv run
 
-after_success:
-  - git config user.name "MSeifert04"
-  - git config user.email "michaelseifert04@yahoo.de"
-  - git branch test
-  - git add -A
-  - git commit -m "New results"
-  - git push origin test
+# after_success:
+#   - git config user.name "MSeifert04"
+#   - git config user.email "michaelseifert04@yahoo.de"
+#   - git branch test
+#   - git add -A
+#   - git commit -m "New results"
+#   - git push origin test

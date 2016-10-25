@@ -1,0 +1,22 @@
+environment:
+
+  matrix:
+
+    - PYTHON: "C:\\Python35-x64"
+
+
+install:
+  - "%PYTHON%/Scripts/pip.exe install virtualenv"
+  - "%PYTHON%/Scripts/pip.exe install git+git://github.com/spacetelescope/asv.git@master"
+  - git clone https://github.com/MSeifert04/iteration_utilities.git
+
+
+build: off
+
+test_script:
+  - "%PYTHON%/Scripts/asv.exe run"
+
+#on_success:
+#  You can use this step to upload your artifacts to a public website.
+#  See Appveyor's documentation for more details. Or you can simply
+#  access your wheels from the Appveyor "artifacts" tab for your build.
