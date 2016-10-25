@@ -1,4 +1,6 @@
 iteration_utilities
+.asv/env/
+.asv/html/
 
 
 # Byte-compiled / optimized / DLL files

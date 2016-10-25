@@ -29,7 +29,7 @@
     // If missing or the empty string, the tool will be automatically
     // determined by looking for tools on the PATH environment
     // variable.
-    "environment_type": "conda",
+    "environment_type": "virtualenv",
 
     // timeout in seconds for installing any dependencies in environment
     // defaults to 10 min
@@ -53,9 +53,9 @@
     // followed by the pip installed packages).
     //
     "matrix": {
-        "pip+toolz": [""],
-        "pip+cytoolz": [""],
-        "pip+pydash": [""],
+        "toolz": [""],
+        "cytoolz": [""],
+        "pydash": [""],
     },
 
     // Combinations of libraries/python versions can be excluded/included
