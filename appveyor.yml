@@ -9,12 +9,13 @@ install:
   - "%PYTHON%/Scripts/pip.exe install virtualenv"
   - "%PYTHON%/Scripts/pip.exe install git+git://github.com/spacetelescope/asv.git@master"
   - git clone https://github.com/MSeifert04/iteration_utilities.git
+  - "%PYTHON%/Scripts/asv.exe machine --machine AppVeyor --os win32 --arch x86_64 --cpu unknown --ram 4GB"
 
 
 build: off
 
 test_script:
-  - "%PYTHON%/Scripts/asv.exe run"
+  - "%PYTHON%/Scripts/asv.exe run --machine AppVeyor"
 
 #on_success:
 #  You can use this step to upload your artifacts to a public website.
