@@ -6,9 +6,9 @@
 #
 # =============================================================================
 
+from iteration_utilities import PY2, consume
 from itertools import cycle, islice
 import random
-from iteration_utilities import PY2
 
 # =============================================================================
 #
@@ -60,11 +60,11 @@ def old1():
 
 FUNCS = {
     'iteration_utilities.roundrobin': iteration_utilities_roundrobin,
-    'toolz.interleave': toolz_interleave,
-    'cytoolz.interleave': cytoolz_interleave,
-    'pydash.interleave': pydash_interleave,
-    'old1': old1,
-    }
+    'toolz.interleave':               toolz_interleave,
+    'cytoolz.interleave':             cytoolz_interleave,
+    'pydash.interleave':              pydash_interleave,
+    'old1':                           old1,
+}
 
 
 # =============================================================================
@@ -77,14 +77,20 @@ FUNCS = {
 # =============================================================================
 
 # iterables
-FUNCS_CALL_1 = {
+FUNCS_CALL_1_LIST = {
     'iteration_utilities.roundrobin': lambda f, it: list(f(*it)),
-    # Toolz does not need the unpacking.
-    'toolz.interleave': lambda f, it: list(f(it)),
-    'cytoolz.interleave': lambda f, it: list(f(it)),
-    'pydash.interleave': lambda f, it: f(*it),
-    'old1': lambda f, it: list(f(*it)),
-    }
+    'toolz.interleave':               lambda f, it: list(f(it)),
+    'cytoolz.interleave':             lambda f, it: list(f(it)),
+    'pydash.interleave':              lambda f, it: f(*it),
+    'old1':                           lambda f, it: list(f(*it)),
+}
+FUNCS_CALL_1_CONSUME = {
+    'iteration_utilities.roundrobin': lambda f, it: consume(f(*it), None),
+    'toolz.interleave':               lambda f, it: consume(f(it), None),
+    'cytoolz.interleave':             lambda f, it: consume(f(it), None),
+    'pydash.interleave':              lambda:       None,
+    'old1':                           lambda f, it: consume(f(*it), None),
+}
 
 
 # =============================================================================
@@ -106,8 +112,11 @@ lst500 = [sorted([random.randint(0, 1000)
 
 
 class X:
-    params = ['iteration_utilities.roundrobin', 'toolz.interleave',
-              'cytoolz.interleave', 'pydash.interleave', 'old1']
+    params = ['iteration_utilities.roundrobin',
+              'toolz.interleave',
+              'cytoolz.interleave',
+              'pydash.interleave',
+              'old1']
     param_names = ('function')
 
     def setup(self, func):
@@ -116,7 +125,13 @@ class X:
         self.lst500 = lst500
 
     def time_fewiterableslong(self, func):
-        FUNCS_CALL_1[func](self.func, self.lst10)
+        FUNCS_CALL_1_LIST[func](self.func, self.lst10)
+
+    def time_fewiterableslong_consume(self, func):
+        FUNCS_CALL_1_CONSUME[func](self.func, self.lst10)
 
     def time_manyiterablesshort(self, func):
-        FUNCS_CALL_1[func](self.func, self.lst500)
+        FUNCS_CALL_1_LIST[func](self.func, self.lst500)
+
+    def time_manyiterablesshort_consume(self, func):
+        FUNCS_CALL_1_CONSUME[func](self.func, self.lst500)

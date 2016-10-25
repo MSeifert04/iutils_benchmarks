@@ -6,8 +6,8 @@
 #
 # =============================================================================
 
-import random
 from operator import add
+import random
 
 # =============================================================================
 #
@@ -46,11 +46,11 @@ def cytoolz_reduceby():
 
 FUNCS = {
     'iteration_utilities.groupedby': iteration_utilities_groupedby,
-    'toolz.groupby': toolz_groupby,
-    'cytoolz.groupby': cytoolz_groupby,
-    'toolz.reduceby': toolz_reduceby,
-    'cytoolz.reduceby': cytoolz_reduceby,
-    }
+    'toolz.groupby':                 toolz_groupby,
+    'cytoolz.groupby':               cytoolz_groupby,
+    'toolz.reduceby':                toolz_reduceby,
+    'cytoolz.reduceby':              cytoolz_reduceby,
+}
 
 
 # =============================================================================
@@ -66,20 +66,20 @@ FUNCS = {
 # iterable and key
 FUNCS_CALL_1 = {
     'iteration_utilities.groupedby': lambda f, it, k: f(it, key=k),
-    'toolz.groupby': lambda f, it, k: f(k, it),
-    'cytoolz.groupby': lambda f, it, k: f(k, it),
-    'toolz.reduceby': lambda: None,
-    'cytoolz.reduceby': lambda: None,
-    }
+    'toolz.groupby':                 lambda f, it, k: f(k, it),
+    'cytoolz.groupby':               lambda f, it, k: f(k, it),
+    'toolz.reduceby':                lambda:          None,
+    'cytoolz.reduceby':              lambda:          None,
+}
 
 # iterable, key and reduce
 FUNCS_CALL_2 = {
     'iteration_utilities.groupedby': lambda f, it, k, r: f(it, key=k, reduce=r),
-    'toolz.groupby': lambda: None,
-    'cytoolz.groupby': lambda: None,
-    'toolz.reduceby': lambda f, it, k, r: f(k, r, it),
-    'cytoolz.reduceby': lambda f, it, k, r: f(k, r, it),
-    }
+    'toolz.groupby':                 lambda:             None,
+    'cytoolz.groupby':               lambda:             None,
+    'toolz.reduceby':                lambda f, it, k, r: f(k, r, it),
+    'cytoolz.reduceby':              lambda f, it, k, r: f(k, r, it),
+}
 
 
 # =============================================================================
@@ -96,8 +96,11 @@ lst = [random.randint(-50, 50) for _ in range(10000)]
 
 
 class X:
-    params = ['iteration_utilities.groupedby', 'toolz.groupby',
-              'cytoolz.groupby', 'toolz.reduceby', 'cytoolz.reduceby']
+    params = ['iteration_utilities.groupedby',
+              'toolz.groupby',
+              'cytoolz.groupby',
+              'toolz.reduceby',
+              'cytoolz.reduceby']
     param_names = ('function')
 
     def setup(self, func):

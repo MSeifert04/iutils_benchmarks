@@ -6,8 +6,8 @@
 #
 # =============================================================================
 
+from iteration_utilities import PY2, square, consume
 import random
-from iteration_utilities import PY2, square
 
 if PY2:
     from itertools import ifilterfalse as filterfalse
@@ -73,12 +73,12 @@ def alt1():
 
 FUNCS = {
     'iteration_utilities.unique_everseen': iteration_utilities_unique_everseen,
-    'toolz.unique': toolz_unique,
-    'cytoolz.unique': cytoolz_unique,
-    'pydash.unique': pydash_unique,
-    'old1': old1,
-    'alt1': alt1,
-    }
+    'toolz.unique':                        toolz_unique,
+    'cytoolz.unique':                      cytoolz_unique,
+    'pydash.unique':                       pydash_unique,
+    'old1':                                old1,
+    'alt1':                                alt1,
+}
 
 
 # =============================================================================
@@ -91,24 +91,40 @@ FUNCS = {
 # =============================================================================
 
 # iterable
-FUNCS_CALL_1 = {
+FUNCS_CALL_1_LIST = {
     'iteration_utilities.unique_everseen': lambda f, it: list(f(it)),
-    'toolz.unique': lambda f, it: list(f(it)),
-    'cytoolz.unique': lambda f, it: list(f(it)),
-    'pydash.unique': lambda f, it: f(it),
-    'old1': lambda f, it: list(f(it)),
-    'alt1': lambda f, it: f(it),
-    }
+    'toolz.unique':                        lambda f, it: list(f(it)),
+    'cytoolz.unique':                      lambda f, it: list(f(it)),
+    'pydash.unique':                       lambda f, it: f(it),
+    'old1':                                lambda f, it: list(f(it)),
+    'alt1':                                lambda f, it: f(it),
+}
+FUNCS_CALL_1_CONSUME = {
+    'iteration_utilities.unique_everseen': lambda f, it: consume(f(it), None),
+    'toolz.unique':                        lambda f, it: consume(f(it), None),
+    'cytoolz.unique':                      lambda f, it: consume(f(it), None),
+    'pydash.unique':                       lambda: None,
+    'old1':                                lambda f, it: consume(f(it), None),
+    'alt1':                                lambda: None,
+}
 
 # iterable and key
-FUNCS_CALL_2 = {
+FUNCS_CALL_2_LIST = {
     'iteration_utilities.unique_everseen': lambda f, it, k: list(f(it, k)),
-    'toolz.unique': lambda f, it, k: list(f(it, k)),
-    'cytoolz.unique': lambda f, it, k: list(f(it, k)),
-    'pydash.unique': lambda: None,
-    'old1': lambda f, it, k: list(f(it, k)),
-    'alt1': lambda: None,
-    }
+    'toolz.unique':                        lambda f, it, k: list(f(it, k)),
+    'cytoolz.unique':                      lambda f, it, k: list(f(it, k)),
+    'pydash.unique':                       lambda: None,
+    'old1':                                lambda f, it, k: list(f(it, k)),
+    'alt1':                                lambda: None,
+}
+FUNCS_CALL_2_CONSUME = {
+    'iteration_utilities.unique_everseen': lambda f, it, k: consume(f(it, k), None),
+    'toolz.unique':                        lambda f, it, k: consume(f(it, k), None),
+    'cytoolz.unique':                      lambda f, it, k: consume(f(it, k), None),
+    'pydash.unique':                       lambda: None,
+    'old1':                                lambda f, it, k: consume(f(it, k), None),
+    'alt1':                                lambda: None,
+}
 
 
 # =============================================================================
@@ -126,8 +142,12 @@ lst2 = [random.randint(0, 20000) for _ in range(100000)]
 
 
 class X:
-    params = ['iteration_utilities.unique_everseen', 'toolz.unique',
-              'cytoolz.unique', 'pydash.unique', 'old1', 'alt1']
+    params = ['iteration_utilities.unique_everseen',
+              'toolz.unique',
+              'cytoolz.unique',
+              'pydash.unique',
+              'old1',
+              'alt1']
     param_names = ('function')
 
     def setup(self, func):
@@ -136,10 +156,19 @@ class X:
         self.lst2 = lst2
 
     def time_noargs_manyduplicates(self, func):
-        FUNCS_CALL_1[func](self.func, self.lst)
+        FUNCS_CALL_1_LIST[func](self.func, self.lst)
+
+    def time_noargs_manyduplicates_consume(self, func):
+        FUNCS_CALL_1_CONSUME[func](self.func, self.lst)
 
     def time_noargs_fewduplicates(self, func):
-        FUNCS_CALL_1[func](self.func, self.lst2)
+        FUNCS_CALL_1_LIST[func](self.func, self.lst2)
+
+    def time_noargs_fewduplicates_consume(self, func):
+        FUNCS_CALL_1_CONSUME[func](self.func, self.lst2)
 
     def time_key_square(self, func):
-        FUNCS_CALL_2[func](self.func, self.lst, square)
+        FUNCS_CALL_2_LIST[func](self.func, self.lst, square)
+
+    def time_key_square_consume(self, func):
+        FUNCS_CALL_2_CONSUME[func](self.func, self.lst, square)

@@ -25,7 +25,7 @@ def iteration_utilities_argmax():
 
 FUNCS = {
     'iteration_utilities.argmax': iteration_utilities_argmax,
-    }
+}
 
 
 # =============================================================================
@@ -40,12 +40,12 @@ FUNCS = {
 # iterable
 FUNCS_CALL_1 = {
     'iteration_utilities.argmax': lambda f, it: f(it),
-    }
+}
 
 # iterable and key
 FUNCS_CALL_2 = {
     'iteration_utilities.argmax': lambda f, it, k: f(it, key=k),
-    }
+}
 
 
 # =============================================================================

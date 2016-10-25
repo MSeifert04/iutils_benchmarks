@@ -6,6 +6,8 @@
 #
 # =============================================================================
 
+from iteration_utilities import consume
+
 # =============================================================================
 #
 # Alternative implementations
@@ -90,13 +92,14 @@ def old2():
     return deepflatten
 
 
-FUNCS = {'iteration_utilities.deepflatten': iteration_utilities_deepflatten,
-         'iteration_utilities.flatten': iteration_utilities_flatten,
-         'pydash.flatten_deep': pydash_flatten_deep,
-         'pydash.flatten': pydash_flatten,
-         'old_1': old1,
-         'old_2': old2,
-         }
+FUNCS = {
+    'iteration_utilities.deepflatten': iteration_utilities_deepflatten,
+    'iteration_utilities.flatten':     iteration_utilities_flatten,
+    'pydash.flatten_deep':             pydash_flatten_deep,
+    'pydash.flatten':                  pydash_flatten,
+    'old1':                            old1,
+    'old2':                            old2,
+}
 
 
 # =============================================================================
@@ -111,55 +114,63 @@ FUNCS = {'iteration_utilities.deepflatten': iteration_utilities_deepflatten,
 # Note: Flatten is not directly comparable to deepflatten, only if depth=1!
 #       in any other case make it fail!
 
-# only iterable
-FUNCS_CALL_1 = {
+# iterable
+FUNCS_CALL_1_LIST = {
     'iteration_utilities.deepflatten': lambda f, it: list(f(it)),
-    'iteration_utilities.flatten': lambda: None,
-    'pydash.flatten_deep': lambda f, it: f(it),
-    'pydash.flatten': lambda: None,
-    'old_1': lambda f, it: list(f(it)),
-    'old_2': lambda f, it: list(f(it)),
-    }
+    'iteration_utilities.flatten':     lambda:       None,
+    'pydash.flatten_deep':             lambda f, it: f(it),
+    'pydash.flatten':                  lambda:       None,
+    'old1':                            lambda f, it: list(f(it)),
+    'old2':                            lambda f, it: list(f(it)),
+}
+FUNCS_CALL_1_CONSUME = {
+    'iteration_utilities.deepflatten': lambda f, it: consume(f(it), None),
+    'iteration_utilities.flatten':     lambda:       None,
+    'pydash.flatten_deep':             lambda:       None,
+    'pydash.flatten':                  lambda:       None,
+    'old1':                            lambda f, it: consume(f(it), None),
+    'old2':                            lambda f, it: consume(f(it), None),
+}
 
-# iterable & depth=1
-FUNCS_CALL_2 = {
+# iterable, depth=1
+FUNCS_CALL_2_LIST = {
     'iteration_utilities.deepflatten': lambda f, it, d: list(f(it, d)),
-    'iteration_utilities.flatten': lambda f, it, d: list(f(it)),
-    'pydash.flatten_deep': lambda: None,
-    'pydash.flatten': lambda f, it, d: f(it),
-    'old_1': lambda f, it, d: list(f(it, d)),
-    'old_2': lambda f, it, d: list(f(it, d)),
-    }
+    'iteration_utilities.flatten':     lambda f, it, d: list(f(it)),
+    'pydash.flatten_deep':             lambda:          None,
+    'pydash.flatten':                  lambda f, it, d: f(it),
+    'old1':                            lambda f, it, d: list(f(it, d)),
+    'old2':                            lambda f, it, d: list(f(it, d)),
+}
 
-# iterable & depth!=1
-FUNCS_CALL_3 = {
+# iterable, depth!=1
+FUNCS_CALL_3_LIST = {
     'iteration_utilities.deepflatten': lambda f, it, d: list(f(it, d)),
-    'iteration_utilities.flatten': lambda: None,
-    'pydash.flatten_deep': lambda: None,
-    'pydash.flatten': lambda: None,
-    'old_1': lambda f, it, d: list(f(it, d)),
-    'old_2': lambda f, it, d: list(f(it, d)),
-    }
+    'iteration_utilities.flatten':     lambda:          None,
+    'pydash.flatten_deep':             lambda:          None,
+    'pydash.flatten':                  lambda:          None,
+    'old1':                            lambda f, it, d: list(f(it, d)),
+    'old2':                            lambda f, it, d: list(f(it, d)),
+}
 
-# iterable & types
-FUNCS_CALL_4 = {
+# iterable, types
+FUNCS_CALL_4_LIST = {
     'iteration_utilities.deepflatten': lambda f, it, t: list(f(it, types=t)),
-    'iteration_utilities.flatten': lambda: None,
-    'pydash.flatten_deep': lambda: None,
-    'pydash.flatten': lambda: None,
-    'old_1': lambda f, it, t: list(f(it, types=t)),
-    'old_2': lambda f, it, t: list(f(it, types=t)),
-    }
+    'iteration_utilities.flatten':     lambda:          None,
+    'pydash.flatten_deep':             lambda:          None,
+    'pydash.flatten':                  lambda:          None,
+    'old1':                            lambda f, it, t: list(f(it, types=t)),
+    'old2':                            lambda f, it, t: list(f(it, types=t)),
+}
 
-# iterable & ignore
-FUNCS_CALL_5 = {
+# iterable, ignore
+FUNCS_CALL_5_LIST = {
     'iteration_utilities.deepflatten': lambda f, it, i: list(f(it, ignore=i)),
-    'iteration_utilities.flatten': lambda: None,
-    'pydash.flatten_deep': lambda: None,
-    'pydash.flatten': lambda: None,
-    'old_1': lambda f, it, i: list(f(it, ignore=i)),
-    'old_2': lambda f, it, i: list(f(it, ignore=i)),
-    }
+    'iteration_utilities.flatten':     lambda:          None,
+    'pydash.flatten_deep':             lambda:          None,
+    'pydash.flatten':                  lambda:          None,
+    'old1':                            lambda f, it, i: list(f(it, ignore=i)),
+    'old2':                            lambda f, it, i: list(f(it, ignore=i)),
+}
 
 
 # =============================================================================
@@ -176,8 +187,12 @@ lst = [[(0, ) * 10] * 10] * 1000
 
 
 class X:
-    params = ['iteration_utilities.deepflatten', 'iteration_utilities.flatten',
-              'pydash.flatten_deep', 'pydash.flatten', 'old_1', 'old_2']
+    params = ['iteration_utilities.deepflatten',
+              'iteration_utilities.flatten',
+              'pydash.flatten_deep',
+              'pydash.flatten',
+              'old1',
+              'old2']
     param_names = ('function')
 
     def setup(self, func):
@@ -185,16 +200,19 @@ class X:
         self.lst = lst
 
     def time_noargs(self, func):
-        FUNCS_CALL_1[func](self.func, self.lst)
+        FUNCS_CALL_1_LIST[func](self.func, self.lst)
+
+    def time_noargs_consume(self, func):
+        FUNCS_CALL_1_CONSUME[func](self.func, self.lst)
 
     def time_depth1(self, func):
-        FUNCS_CALL_2[func](self.func, self.lst, 1)
+        FUNCS_CALL_2_LIST[func](self.func, self.lst, 1)
 
     def time_depth2(self, func):
-        FUNCS_CALL_3[func](self.func, self.lst, 2)
+        FUNCS_CALL_3_LIST[func](self.func, self.lst, 2)
 
     def time_types(self, func):
-        FUNCS_CALL_4[func](self.func, self.lst, list)
+        FUNCS_CALL_4_LIST[func](self.func, self.lst, list)
 
     def time_ignores(self, func):
-        FUNCS_CALL_5[func](self.func, self.lst, tuple)
+        FUNCS_CALL_5_LIST[func](self.func, self.lst, tuple)

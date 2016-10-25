@@ -6,7 +6,7 @@
 #
 # =============================================================================
 
-from iteration_utilities import PY2
+from iteration_utilities import PY2, consume
 
 if PY2:
     from itertools import ifilter as filter
@@ -42,9 +42,9 @@ def old2():
 
 FUNCS = {
     'iteration_utilities.clamp': iteration_utilities_clamp,
-    'old_1': old1,
-    'old_2': old2,
-    }
+    'old1':                      old1,
+    'old2':                      old2,
+}
 
 
 # =============================================================================
@@ -56,12 +56,18 @@ FUNCS = {
 #
 # =============================================================================
 
-# iterable & low, high
-FUNCS_CALL_1 = {
+
+# iterable, low, high
+FUNCS_CALL_1_LIST = {
     'iteration_utilities.clamp': lambda f, it, l, h: list(f(it, l, h)),
-    'old_1': lambda f, it, l, h: list(f(it, l, h)),
-    'old_2': lambda f, it, l, h: list(f(it, l, h)),
-    }
+    'old1':                      lambda f, it, l, h: list(f(it, l, h)),
+    'old2':                      lambda f, it, l, h: list(f(it, l, h)),
+}
+FUNCS_CALL_1_CONSUME = {
+    'iteration_utilities.clamp': lambda f, it, l, h: consume(f(it, l, h), None),
+    'old1':                      lambda f, it, l, h: consume(f(it, l, h), None),
+    'old2':                      lambda f, it, l, h: consume(f(it, l, h), None),
+}
 
 
 # =============================================================================
@@ -78,7 +84,9 @@ lst = list(range(100000))
 
 
 class X:
-    params = ['iteration_utilities.clamp', 'old_1', 'old_2']
+    params = ['iteration_utilities.clamp',
+              'old1',
+              'old2']
     param_names = ('function')
 
     def setup(self, func):
@@ -86,7 +94,13 @@ class X:
         self.lst = lst
 
     def time_small(self, func):
-        FUNCS_CALL_1[func](self.func, self.lst, 5000,  10000)
+        FUNCS_CALL_1_LIST[func](self.func, self.lst, 5000,  10000)
+
+    def time_small_consume(self, func):
+        FUNCS_CALL_1_CONSUME[func](self.func, self.lst, 5000,  10000)
 
     def time_large(self, func):
-        FUNCS_CALL_1[func](self.func, self.lst, 10,  99990)
+        FUNCS_CALL_1_LIST[func](self.func, self.lst, 10,  99990)
+
+    def time_large_consume(self, func):
+        FUNCS_CALL_1_CONSUME[func](self.func, self.lst, 10,  99990)

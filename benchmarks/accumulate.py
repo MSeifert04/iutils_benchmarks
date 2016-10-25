@@ -6,6 +6,7 @@
 #
 # =============================================================================
 
+from iteration_utilities import consume
 from operator import add
 
 # =============================================================================
@@ -52,12 +53,13 @@ def old1():
     return accumulate
 
 
-FUNCS = {'iteration_utilities.accumulate': iteration_utilities_accumulate,
-         'itertools.accumulate': itertools_accumulate,
-         'toolz.accumulate': toolz_accumulate,
-         'cytoolz.accumulate': cytoolz_accumulate,
-         'old_1': old1,
-         }
+FUNCS = {
+    'iteration_utilities.accumulate': iteration_utilities_accumulate,
+    'itertools.accumulate':           itertools_accumulate,
+    'toolz.accumulate':               toolz_accumulate,
+    'cytoolz.accumulate':             cytoolz_accumulate,
+    'old1':                           old1,
+}
 
 
 # =============================================================================
@@ -69,23 +71,37 @@ FUNCS = {'iteration_utilities.accumulate': iteration_utilities_accumulate,
 #
 # =============================================================================
 
-# only iterable
-FUNCS_CALL_1 = {
+# iterable
+FUNCS_CALL_1_LIST = {
     'iteration_utilities.accumulate': lambda f, it: list(f(it)),
-    'itertools.accumulate': lambda f, it: list(f(it)),
-    'toolz.accumulate': lambda: None,
-    'cytoolz.accumulate': lambda: None,
-    'old_1': lambda f, it: list(f(it)),
-    }
+    'itertools.accumulate':           lambda f, it: list(f(it)),
+    'toolz.accumulate':               lambda      : None,
+    'cytoolz.accumulate':             lambda      : None,
+    'old1':                           lambda f, it: list(f(it)),
+}
+FUNCS_CALL_1_CONSUME = {
+    'iteration_utilities.accumulate': lambda f, it: consume(f(it), None),
+    'itertools.accumulate':           lambda f, it: consume(f(it), None),
+    'toolz.accumulate':               lambda      : None,
+    'cytoolz.accumulate':             lambda      : None,
+    'old1':                           lambda f, it: consume(f(it), None),
+}
 
 # iterable & func
-FUNCS_CALL_2 = {
+FUNCS_CALL_2_LIST = {
     'iteration_utilities.accumulate': lambda f, it, op: list(f(it, op)),
-    'itertools.accumulate': lambda f, it, op: list(f(it, op)),
-    'toolz.accumulate': lambda f, it, op: list(f(op, it)),
-    'cytoolz.accumulate': lambda f, it, op: list(f(op, it)),
-    'old_1': lambda f, it, op: list(f(it, op)),
-    }
+    'itertools.accumulate':           lambda f, it, op: list(f(it, op)),
+    'toolz.accumulate':               lambda f, it, op: list(f(op, it)),
+    'cytoolz.accumulate':             lambda f, it, op: list(f(op, it)),
+    'old1':                           lambda f, it, op: list(f(it, op)),
+}
+FUNCS_CALL_2_CONSUME = {
+    'iteration_utilities.accumulate': lambda f, it, op: consume(f(it, op), None),
+    'itertools.accumulate':           lambda f, it, op: consume(f(it, op), None),
+    'toolz.accumulate':               lambda f, it, op: consume(f(op, it), None),
+    'cytoolz.accumulate':             lambda f, it, op: consume(f(op, it), None),
+    'old1':                           lambda f, it, op: consume(f(it, op), None),
+}
 
 
 # =============================================================================
@@ -102,8 +118,11 @@ lst = list(range(100000))
 
 
 class X:
-    params = ['iteration_utilities.accumulate', 'itertools.accumulate',
-              'toolz.accumulate', 'cytoolz.accumulate', 'old_1']
+    params = ['iteration_utilities.accumulate',
+              'itertools.accumulate',
+              'toolz.accumulate',
+              'cytoolz.accumulate',
+              'old1']
     param_names = ('function')
 
     def setup(self, func):
@@ -111,10 +130,13 @@ class X:
         self.lst = lst
 
     def time_noargs(self, func):
-        FUNCS_CALL_1[func](self.func, self.lst)
+        FUNCS_CALL_1_LIST[func](self.func, self.lst)
+
+    def time_noargs_consume(self, func):
+        FUNCS_CALL_1_CONSUME[func](self.func, self.lst)
 
     def time_add(self, func):
-        FUNCS_CALL_2[func](self.func, self.lst, add)
+        FUNCS_CALL_2_LIST[func](self.func, self.lst, add)
 
-    def time_min(self, func):
-        FUNCS_CALL_2[func](self.func, self.lst, min)
+    def time_add_consume(self, func):
+        FUNCS_CALL_2_CONSUME[func](self.func, self.lst, add)

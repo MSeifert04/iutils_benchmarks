@@ -29,8 +29,8 @@ def old1():
 
 FUNCS = {
     'iteration_utilities.all_isinstance': iteration_utilities_allisinstance,
-    'old_1': old1,
-    }
+    'old_1':                              old1,
+}
 
 
 # =============================================================================
@@ -45,8 +45,8 @@ FUNCS = {
 # iterable & types
 FUNCS_CALL_1 = {
     'iteration_utilities.all_isinstance': lambda f, it, t: f(it, t),
-    'old_1': lambda f, it, t: f(it, t),
-    }
+    'old_1':                              lambda f, it, t: f(it, t),
+}
 
 
 # =============================================================================
@@ -63,7 +63,8 @@ lst = list(range(100000))
 
 
 class X:
-    params = ['iteration_utilities.all_isinstance', 'old_1']
+    params = ['iteration_utilities.all_isinstance',
+              'old_1']
     param_names = ('function')
 
     def setup(self, func):

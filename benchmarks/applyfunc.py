@@ -6,7 +6,7 @@
 #
 # =============================================================================
 
-from iteration_utilities import return_True
+from iteration_utilities import return_True, consume
 from itertools import islice
 
 # =============================================================================
@@ -47,10 +47,10 @@ def old1():
 
 FUNCS = {
     'iteration_utilities.applyfunc': iteration_utilities_applyfunc,
-    'toolz.iterate': toolz_iterate,
-    'cytoolz.iterate': cytoolz_iterate,
-    'old1': old1,
-    }
+    'toolz.iterate':                 toolz_iterate,
+    'cytoolz.iterate':               cytoolz_iterate,
+    'old1':                          old1,
+}
 
 
 # =============================================================================
@@ -64,12 +64,18 @@ FUNCS = {
 
 
 # (f) func, (ff)func_to_use, (i) initialvalue, (n) number of times
-FUNCS_CALL_1 = {
+FUNCS_CALL_1_LIST = {
     'iteration_utilities.applyfunc': lambda f, ff, i, n: list(islice(f(ff, i), n)),
-    'toolz.iterate': lambda f, ff, i, n: list(islice(f(ff, i), n)),
-    'cytoolz.iterate': lambda f, ff, i, n: list(islice(f(ff, i), n)),
-    'old1': lambda f, ff, i, n: list(islice(f(ff, i), n)),
-    }
+    'toolz.iterate':                 lambda f, ff, i, n: list(islice(f(ff, i), n)),
+    'cytoolz.iterate':               lambda f, ff, i, n: list(islice(f(ff, i), n)),
+    'old1':                          lambda f, ff, i, n: list(islice(f(ff, i), n)),
+}
+FUNCS_CALL_1_CONSUME = {
+    'iteration_utilities.applyfunc': lambda f, ff, i, n: consume(islice(f(ff, i), n), None),
+    'toolz.iterate':                 lambda f, ff, i, n: consume(islice(f(ff, i), n), None),
+    'cytoolz.iterate':               lambda f, ff, i, n: consume(islice(f(ff, i), n), None),
+    'old1':                          lambda f, ff, i, n: consume(islice(f(ff, i), n), None),
+}
 
 
 # =============================================================================
@@ -83,8 +89,10 @@ FUNCS_CALL_1 = {
 
 
 class X:
-    params = ['iteration_utilities.applyfunc', 'toolz.iterate',
-              'cytoolz.iterate', 'old1']
+    params = ['iteration_utilities.applyfunc',
+              'toolz.iterate',
+              'cytoolz.iterate',
+              'old1']
     param_names = ('function')
 
     def setup(self, func):
@@ -94,4 +102,10 @@ class X:
         # use return_True because it's one of the fastest functions that can be
         # called with one argument. This ensures we are measuring primarly the
         # generator not the function call.
-        FUNCS_CALL_1[func](self.func, return_True, 1, 10000)
+        FUNCS_CALL_1_LIST[func](self.func, return_True, 1, 10000)
+
+    def time_retTrue_consume(self, func):
+        # use return_True because it's one of the fastest functions that can be
+        # called with one argument. This ensures we are measuring primarly the
+        # generator not the function call.
+        FUNCS_CALL_1_CONSUME[func](self.func, return_True, 1, 10000)

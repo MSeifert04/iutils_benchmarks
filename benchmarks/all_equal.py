@@ -34,8 +34,8 @@ def old1():
 
 FUNCS = {
     'iteration_utilities.all_equal': iteration_utilities_all_equal,
-    'old1': old1,
-    }
+    'old1':                          old1,
+}
 
 
 # =============================================================================
@@ -50,8 +50,8 @@ FUNCS = {
 # iterable & types
 FUNCS_CALL_1 = {
     'iteration_utilities.all_equal': lambda f, it: f(it),
-    'old1': lambda f, it: f(it),
-    }
+    'old1':                          lambda f, it: f(it),
+}
 
 
 # =============================================================================
@@ -68,7 +68,8 @@ lst = [0] * 100000
 
 
 class X:
-    params = ['iteration_utilities.all_equal', 'old1']
+    params = ['iteration_utilities.all_equal',
+              'old1']
     param_names = ('function')
 
     def setup(self, func):

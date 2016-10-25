@@ -6,8 +6,9 @@
 #
 # =============================================================================
 
-import random
+from iteration_utilities import consume
 from itertools import chain
+import random
 
 # =============================================================================
 #
@@ -83,12 +84,12 @@ def old1():
 
 FUNCS = {
     'iteration_utilities.merge': iteration_utilities_merge,
-    'toolz.merge_sorted': toolz_merge_sorted,
-    'cytoolz.merge_sorted': cytoolz_merge_sorted,
-    'heapq.merge': heapq_merge,
-    'sorted': builtin_sorted,
-    'old1': old1,
-    }
+    'toolz.merge_sorted':        toolz_merge_sorted,
+    'cytoolz.merge_sorted':      cytoolz_merge_sorted,
+    'heapq.merge':               heapq_merge,
+    'sorted':                    builtin_sorted,
+    'old1':                      old1,
+}
 
 
 # =============================================================================
@@ -101,14 +102,22 @@ FUNCS = {
 # =============================================================================
 
 # iterables
-FUNCS_CALL_1 = {
+FUNCS_CALL_1_LIST = {
     'iteration_utilities.merge': lambda f, it: list(f(*it)),
-    'heapq.merge': lambda f, it: list(f(*it)),
-    'sorted': lambda f, it: f(chain(*it)),
-    'toolz.merge_sorted': lambda f, it: list(f(*it)),
-    'cytoolz.merge_sorted': lambda f, it: list(f(*it)),
-    'old1': lambda f, it: list(f(*it)),
-    }
+    'heapq.merge':               lambda f, it: list(f(*it)),
+    'sorted':                    lambda f, it: f(chain(*it)),
+    'toolz.merge_sorted':        lambda f, it: list(f(*it)),
+    'cytoolz.merge_sorted':      lambda f, it: list(f(*it)),
+    'old1':                      lambda f, it: list(f(*it)),
+}
+FUNCS_CALL_1_CONSUME = {
+    'iteration_utilities.merge': lambda f, it: consume(f(*it), None),
+    'heapq.merge':               lambda f, it: consume(f(*it), None),
+    'sorted':                    lambda:       None,
+    'toolz.merge_sorted':        lambda f, it: consume(f(*it), None),
+    'cytoolz.merge_sorted':      lambda f, it: consume(f(*it), None),
+    'old1':                      lambda f, it: consume(f(*it), None),
+}
 
 
 # =============================================================================
@@ -129,8 +138,12 @@ lst500 = [sorted([random.randint(0, 1000)
 
 
 class X:
-    params = ['iteration_utilities.merge', 'sorted', 'heapq.merge',
-              'toolz.merge_sorted', 'cytoolz.merge_sorted', 'old1']
+    params = ['iteration_utilities.merge',
+              'sorted',
+              'heapq.merge',
+              'toolz.merge_sorted',
+              'cytoolz.merge_sorted',
+              'old1']
     param_names = ('function')
 
     def setup(self, func):
@@ -139,7 +152,13 @@ class X:
         self.lst500 = lst500
 
     def time_fewiterableslong(self, func):
-        FUNCS_CALL_1[func](self.func, self.lst10)
+        FUNCS_CALL_1_LIST[func](self.func, self.lst10)
+
+    def time_fewiterableslong_consume(self, func):
+        FUNCS_CALL_1_CONSUME[func](self.func, self.lst10)
 
     def time_manyiterablesshort(self, func):
-        FUNCS_CALL_1[func](self.func, self.lst500)
+        FUNCS_CALL_1_LIST[func](self.func, self.lst500)
+
+    def time_manyiterablesshort_consume(self, func):
+        FUNCS_CALL_1_CONSUME[func](self.func, self.lst500)

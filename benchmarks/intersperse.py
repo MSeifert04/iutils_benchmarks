@@ -6,6 +6,8 @@
 #
 # =============================================================================
 
+from iteration_utilities import consume
+
 # =============================================================================
 #
 # Alternative implementations
@@ -38,10 +40,10 @@ def pydash_intersperse():
 
 FUNCS = {
     'iteration_utilities.intersperse': iteration_utilities_intersperse,
-    'toolz.interpose': toolz_interpose,
-    'cytoolz.interpose': cytoolz_interpose,
-    'pydash.intersperse': pydash_intersperse,
-    }
+    'toolz.interpose':                 toolz_interpose,
+    'cytoolz.interpose':               cytoolz_interpose,
+    'pydash.intersperse':              pydash_intersperse,
+}
 
 
 # =============================================================================
@@ -55,12 +57,18 @@ FUNCS = {
 
 
 # Iterable and element
-FUNCS_CALL_1 = {
+FUNCS_CALL_1_LIST = {
     'iteration_utilities.intersperse': lambda f, it, e: list(f(it, e)),
-    'toolz.interpose': lambda f, it, e: list(f(e, it)),
-    'cytoolz.interpose': lambda f, it, e: list(f(e, it)),
-    'pydash.intersperse': lambda f, it, e: f(it, e),
-    }
+    'toolz.interpose':                 lambda f, it, e: list(f(e, it)),
+    'cytoolz.interpose':               lambda f, it, e: list(f(e, it)),
+    'pydash.intersperse':              lambda f, it, e: f(it, e),
+}
+FUNCS_CALL_1_CONSUME = {
+    'iteration_utilities.intersperse': lambda f, it, e: consume(f(it, e), None),
+    'toolz.interpose':                 lambda f, it, e: consume(f(e, it), None),
+    'cytoolz.interpose':               lambda f, it, e: consume(f(e, it), None),
+    'pydash.intersperse':              lambda:          None,
+}
 
 
 # =============================================================================
@@ -77,8 +85,10 @@ lst = [0] * 100000
 
 
 class X:
-    params = ['iteration_utilities.intersperse', 'toolz.interpose',
-              'cytoolz.interpose', 'pydash.intersperse']
+    params = ['iteration_utilities.intersperse',
+              'toolz.interpose',
+              'cytoolz.interpose',
+              'pydash.intersperse']
     param_names = ('function')
 
     def setup(self, func):
@@ -86,4 +96,7 @@ class X:
         self.lst = lst
 
     def time_with_x(self, func):
-        FUNCS_CALL_1[func](self.func, self.lst, 'x')
+        FUNCS_CALL_1_LIST[func](self.func, self.lst, 'x')
+
+    def time_with_x_consume(self, func):
+        FUNCS_CALL_1_CONSUME[func](self.func, self.lst, 'x')

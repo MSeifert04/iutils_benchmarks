@@ -6,6 +6,8 @@
 #
 # =============================================================================
 
+from iteration_utilities import consume
+
 # =============================================================================
 #
 # Alternative implementations
@@ -23,7 +25,7 @@ def iteration_utilities_split():
 
 FUNCS = {
     'iteration_utilities.split': iteration_utilities_split,
-    }
+}
 
 
 # =============================================================================
@@ -37,15 +39,21 @@ FUNCS = {
 
 
 # Iterable, element
-FUNCS_CALL_1 = {
+FUNCS_CALL_1_LIST = {
     'iteration_utilities.split': lambda f, it, e: list(f(it, e, eq=True)),
-    }
+}
+FUNCS_CALL_1_CONSUME = {
+    'iteration_utilities.split': lambda f, it, e: consume(f(it, e, eq=True), None),
+}
 
 
 # Iterable and key
-FUNCS_CALL_2 = {
+FUNCS_CALL_2_LIST = {
     'iteration_utilities.split': lambda f, it, k: list(f(it, k)),
-    }
+}
+FUNCS_CALL_2_CONSUME = {
+    'iteration_utilities.split': lambda f, it, k: consume(f(it, k), None),
+}
 
 
 # =============================================================================
@@ -72,7 +80,13 @@ class X:
         self.key = is_odd
 
     def time_element(self, func):
-        FUNCS_CALL_1[func](self.func, self.lst, 1)
+        FUNCS_CALL_1_LIST[func](self.func, self.lst, 1)
+
+    def time_element_consume(self, func):
+        FUNCS_CALL_1_CONSUME[func](self.func, self.lst, 1)
 
     def time_key(self, func):
-        FUNCS_CALL_2[func](self.func, self.lst, self.key)
+        FUNCS_CALL_2_LIST[func](self.func, self.lst, self.key)
+
+    def time_key_consume(self, func):
+        FUNCS_CALL_2_CONSUME[func](self.func, self.lst, self.key)

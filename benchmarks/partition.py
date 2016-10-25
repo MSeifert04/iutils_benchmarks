@@ -6,8 +6,8 @@
 #
 # =============================================================================
 
-import random
 from iteration_utilities import is_even
+import random
 
 # =============================================================================
 #
@@ -47,8 +47,8 @@ def old1():
 
 FUNCS = {
     'iteration_utilities.partition': iteration_utilities_partition,
-    'old1': old1,
-    }
+    'old1':                          old1,
+}
 
 
 # =============================================================================
@@ -63,14 +63,14 @@ FUNCS = {
 # iterable
 FUNCS_CALL_1 = {
     'iteration_utilities.partition': lambda f, it: f(it),
-    'old1': lambda f, it: f(it),
-    }
+    'old1':                          lambda f, it: f(it),
+}
 
 # iterable and key
 FUNCS_CALL_2 = {
     'iteration_utilities.partition': lambda f, it, k: f(it, func=k),
-    'old1': lambda f, it, k: f(it, pred=k),
-    }
+    'old1':                          lambda f, it, k: f(it, pred=k),
+}
 
 
 # =============================================================================
@@ -87,7 +87,8 @@ lst = [random.randint(0, 1) for _ in range(50000)]
 
 
 class X:
-    params = ['iteration_utilities.partition', 'old1']
+    params = ['iteration_utilities.partition',
+              'old1']
     param_names = ('function')
 
     def setup(self, func):

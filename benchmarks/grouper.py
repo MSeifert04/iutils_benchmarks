@@ -6,7 +6,7 @@
 #
 # =============================================================================
 
-from iteration_utilities import PY2
+from iteration_utilities import PY2, consume
 
 if PY2:
     from itertools import izip_longest as zip_longest
@@ -64,13 +64,13 @@ def old1():
 
 FUNCS = {
     'iteration_utilities.grouper': iteration_utilities_grouper,
-    'toolz.partition': toolz_partition,
-    'cytoolz.partition': cytoolz_partition,
-    'toolz.partition_all': toolz_partition_all,
-    'cytoolz.partition_all': cytoolz_partition_all,
-    'pydash.chunk': pydash_chunk,
-    'old1': old1,
-    }
+    'toolz.partition':             toolz_partition,
+    'cytoolz.partition':           cytoolz_partition,
+    'toolz.partition_all':         toolz_partition_all,
+    'cytoolz.partition_all':       cytoolz_partition_all,
+    'pydash.chunk':                pydash_chunk,
+    'old1':                        old1,
+}
 
 
 # =============================================================================
@@ -83,25 +83,24 @@ FUNCS = {
 # =============================================================================
 
 # iterable & groupsize
-FUNCS_CALL_1 = {
+FUNCS_CALL_1_LIST = {
     'iteration_utilities.grouper': lambda f, it, n: list(f(it, n)),
-    'toolz.partition': lambda f, it, n: list(f(n, it)),
-    'cytoolz.partition': lambda f, it, n: list(f(n, it)),
-    'toolz.partition_all': lambda f, it, n: list(f(n, it)),
-    'cytoolz.partition_all': lambda f, it, n: list(f(n, it)),
-    'pydash.chunk': lambda f, it, n: f(it, n),
-    'old1': lambda f, it, n: list(f(it, n)),
-    }
-
-FUNCS_CALL_2 = {
-    'iteration_utilities.grouper': lambda f, it: dict(f(it, 2)),
-    'toolz.partition': lambda f, it: dict(f(2, it)),
-    'cytoolz.partition': lambda f, it: dict(f(2, it)),
-    'toolz.partition_all': lambda f, it: dict(f(2, it)),
-    'cytoolz.partition_all': lambda f, it: dict(f(2, it)),
-    'pydash.chunk': lambda: None,
-    'old1': lambda f, it: dict(f(it, 2)),
-    }
+    'toolz.partition':             lambda f, it, n: list(f(n, it)),
+    'cytoolz.partition':           lambda f, it, n: list(f(n, it)),
+    'toolz.partition_all':         lambda f, it, n: list(f(n, it)),
+    'cytoolz.partition_all':       lambda f, it, n: list(f(n, it)),
+    'pydash.chunk':                lambda f, it, n: f(it, n),
+    'old1':                        lambda f, it, n: list(f(it, n)),
+}
+FUNCS_CALL_1_CONSUME = {
+    'iteration_utilities.grouper': lambda f, it, n: consume(f(it, n), None),
+    'toolz.partition':             lambda f, it, n: consume(f(n, it), None),
+    'cytoolz.partition':           lambda f, it, n: consume(f(n, it), None),
+    'toolz.partition_all':         lambda f, it, n: consume(f(n, it), None),
+    'cytoolz.partition_all':       lambda f, it, n: consume(f(n, it), None),
+    'pydash.chunk':                lambda:          None,
+    'old1':                        lambda f, it, n: consume(f(it, n), None),
+}
 
 
 # =============================================================================
@@ -118,9 +117,13 @@ lst = list(range(100000))
 
 
 class X:
-    params = ['iteration_utilities.grouper', 'toolz.partition',
-              'cytoolz.partition', 'toolz.partition_all',
-              'cytoolz.partition_all', 'pydash.chunk', 'old1']
+    params = ['iteration_utilities.grouper',
+              'toolz.partition',
+              'cytoolz.partition',
+              'toolz.partition_all',
+              'cytoolz.partition_all',
+              'pydash.chunk',
+              'old1']
     param_names = ('function')
 
     def setup(self, func):
@@ -128,10 +131,13 @@ class X:
         self.lst = lst
 
     def time_n2(self, func):
-        FUNCS_CALL_1[func](self.func, self.lst, 2)
+        FUNCS_CALL_1_LIST[func](self.func, self.lst, 2)
+
+    def time_n2_consume(self, func):
+        FUNCS_CALL_1_CONSUME[func](self.func, self.lst, 2)
 
     def time_n50(self, func):
-        FUNCS_CALL_1[func](self.func, self.lst, 50)
+        FUNCS_CALL_1_LIST[func](self.func, self.lst, 50)
 
-    def time_n2_todict(self, func):
-        FUNCS_CALL_2[func](self.func, self.lst)
+    def time_n50_consume(self, func):
+        FUNCS_CALL_1_CONSUME[func](self.func, self.lst, 50)

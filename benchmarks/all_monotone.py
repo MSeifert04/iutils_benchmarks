@@ -23,7 +23,7 @@ def iteration_utilities_all_monotone():
 
 FUNCS = {
     'iteration_utilities.all_monotone': iteration_utilities_all_monotone,
-    }
+}
 
 
 # =============================================================================
@@ -38,7 +38,7 @@ FUNCS = {
 # iterable & types
 FUNCS_CALL_1 = {
     'iteration_utilities.all_monotone': lambda f, it: f(it),
-    }
+}
 
 
 # =============================================================================

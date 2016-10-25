@@ -33,9 +33,9 @@ def cytoolz_is_distinct():
 
 FUNCS = {
     'iteration_utilities.all_distinct': iteration_utilities_all_distinct,
-    'toolz.is_distinct': toolz_is_distinct,
-    'cytoolz.is_distinct': cytoolz_is_distinct,
-    }
+    'toolz.is_distinct':                toolz_is_distinct,
+    'cytoolz.is_distinct':              cytoolz_is_distinct,
+}
 
 
 # =============================================================================
@@ -50,9 +50,9 @@ FUNCS = {
 # iterable & types
 FUNCS_CALL_1 = {
     'iteration_utilities.all_distinct': lambda f, it: f(it),
-    'toolz.is_distinct': lambda f, it: f(it),
-    'cytoolz.is_distinct': lambda f, it: f(it),
-    }
+    'toolz.is_distinct':                lambda f, it: f(it),
+    'cytoolz.is_distinct':              lambda f, it: f(it),
+}
 
 
 # =============================================================================
@@ -69,7 +69,8 @@ lst = list(range(100000))
 
 
 class X:
-    params = ['iteration_utilities.all_distinct', 'toolz.is_distinct',
+    params = ['iteration_utilities.all_distinct',
+              'toolz.is_distinct',
               'cytoolz.is_distinct']
     param_names = ('function')
 

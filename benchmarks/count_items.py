@@ -6,8 +6,8 @@
 #
 # =============================================================================
 
-import operator
 import functools
+import operator
 
 lessthan50 = functools.partial(operator.gt, 50)
 
@@ -28,7 +28,7 @@ def iteration_utilities_count_items():
 
 FUNCS = {
     'iteration_utilities.count_items': iteration_utilities_count_items,
-    }
+}
 
 
 # =============================================================================
@@ -43,17 +43,17 @@ FUNCS = {
 # iterable
 FUNCS_CALL_1 = {
     'iteration_utilities.count_items': lambda f, it: f(it),
-    }
+}
 
 # iterable and predicate
 FUNCS_CALL_2 = {
     'iteration_utilities.count_items': lambda f, it, p: f(it, p),
-    }
+}
 
 # iterable and value
 FUNCS_CALL_3 = {
     'iteration_utilities.count_items': lambda f, it, p: f(it, p, eq=True),
-    }
+}
 
 
 # =============================================================================

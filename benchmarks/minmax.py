@@ -6,8 +6,8 @@
 #
 # =============================================================================
 
-import random
 from iteration_utilities import PY2
+import random
 
 if PY2:
     from itertools import izip_longest as zip_longest
@@ -107,10 +107,10 @@ def old1():
 
 FUNCS = {
     'iteration_utilities.minmax': iteration_utilities_minmax,
-    'min_max': builtin_minmax,
-    'alt1': alt1,
-    'old1': old1,
-    }
+    'min_max':                    builtin_minmax,
+    'alt1':                       alt1,
+    'old1':                       old1,
+}
 
 
 # =============================================================================
@@ -125,18 +125,18 @@ FUNCS = {
 # iterable
 FUNCS_CALL_1 = {
     'iteration_utilities.minmax': lambda f, it: f(it),
-    'min_max': lambda f, it: f(it),
-    'alt1': lambda f, it: f(it),
-    'old1': lambda f, it: f(it),
-    }
+    'min_max':                    lambda f, it: f(it),
+    'alt1':                       lambda f, it: f(it),
+    'old1':                       lambda f, it: f(it),
+}
 
 # iterable and key
 FUNCS_CALL_2 = {
     'iteration_utilities.minmax': lambda f, it, k: f(it, key=k),
-    'min_max': lambda f, it, k: f(it, key=k),
-    'alt1': lambda: None,
-    'old1': lambda f, it, k: f(it, key=k),
-    }
+    'min_max':                    lambda f, it, k: f(it, key=k),
+    'alt1':                       lambda:          None,
+    'old1':                       lambda f, it, k: f(it, key=k),
+}
 
 
 # =============================================================================
@@ -170,7 +170,10 @@ lst2 = [T(random.randint(-50, 50)) for _ in range(10000)]
 
 
 class X:
-    params = ['iteration_utilities.minmax', 'min_max', 'alt1', 'old1']
+    params = ['iteration_utilities.minmax',
+              'min_max',
+              'alt1',
+              'old1']
     param_names = ('function')
 
     def setup(self, func):

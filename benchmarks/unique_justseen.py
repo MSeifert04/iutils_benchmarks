@@ -6,11 +6,11 @@
 #
 # =============================================================================
 
-import random
-from operator import itemgetter
+from iteration_utilities import PY2, consume
 from itertools import groupby
+from operator import itemgetter
+import random
 
-from iteration_utilities import PY2
 
 if PY2:
     from itertools import imap as map
@@ -38,8 +38,8 @@ def old1():
 
 FUNCS = {
     'iteration_utilities.unique_justseen': iteration_utilities_unique_justseen,
-    'old1': old1,
-    }
+    'old1':                                old1,
+}
 
 
 # =============================================================================
@@ -52,16 +52,24 @@ FUNCS = {
 # =============================================================================
 
 # iterable
-FUNCS_CALL_1 = {
+FUNCS_CALL_1_LIST = {
     'iteration_utilities.unique_justseen': lambda f, it: list(f(it)),
-    'old1': lambda f, it: list(f(it)),
-    }
+    'old1':                                lambda f, it: list(f(it)),
+}
+FUNCS_CALL_1_CONSUME = {
+    'iteration_utilities.unique_justseen': lambda f, it: consume(f(it), None),
+    'old1':                                lambda f, it: consume(f(it), None),
+}
 
 # iterable and key
-FUNCS_CALL_2 = {
+FUNCS_CALL_2_LIST = {
     'iteration_utilities.unique_justseen': lambda f, it, k: list(f(it, k)),
-    'old1': lambda f, it, k: list(f(it, k)),
-    }
+    'old1':                                lambda f, it, k: list(f(it, k)),
+}
+FUNCS_CALL_2_CONSUME = {
+    'iteration_utilities.unique_justseen': lambda f, it, k: consume(f(it, k), None),
+    'old1':                                lambda f, it, k: consume(f(it, k), None),
+}
 
 
 # =============================================================================
@@ -78,7 +86,8 @@ lst = [random.randint(-1, 1) for _ in range(100000)]
 
 
 class X:
-    params = ['iteration_utilities.unique_justseen', 'old1']
+    params = ['iteration_utilities.unique_justseen',
+              'old1']
     param_names = ('function')
 
     def setup(self, func):
@@ -86,7 +95,13 @@ class X:
         self.lst = lst
 
     def time_noargs(self, func):
-        FUNCS_CALL_1[func](self.func, self.lst)
+        FUNCS_CALL_1_LIST[func](self.func, self.lst)
+
+    def time_noargs_consume(self, func):
+        FUNCS_CALL_1_CONSUME[func](self.func, self.lst)
 
     def time_keyabs(self, func):
-        FUNCS_CALL_2[func](self.func, self.lst, abs)
+        FUNCS_CALL_2_LIST[func](self.func, self.lst, abs)
+
+    def time_keyabs_consume(self, func):
+        FUNCS_CALL_2_CONSUME[func](self.func, self.lst, abs)

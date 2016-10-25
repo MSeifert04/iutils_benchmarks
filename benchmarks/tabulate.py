@@ -6,7 +6,7 @@
 #
 # =============================================================================
 
-from iteration_utilities import return_True
+from iteration_utilities import return_True, consume
 from itertools import islice
 
 # =============================================================================
@@ -26,7 +26,7 @@ def iteration_utilities_tabulate():
 
 FUNCS = {
     'iteration_utilities.tabulate': iteration_utilities_tabulate,
-    }
+}
 
 
 # =============================================================================
@@ -40,9 +40,12 @@ FUNCS = {
 
 
 # (f) func, (ff)func_to_use, (n) number of times
-FUNCS_CALL_1 = {
+FUNCS_CALL_1_LIST = {
     'iteration_utilities.tabulate': lambda f, ff, n: list(islice(f(ff), n)),
-    }
+}
+FUNCS_CALL_1_CONSUME = {
+    'iteration_utilities.tabulate': lambda f, ff, n: consume(islice(f(ff), n), None),
+}
 
 
 # =============================================================================
@@ -66,4 +69,10 @@ class X:
         # use return_True because it's one of the fastest functions that can be
         # called with one argument. This ensures we are measuring primarly the
         # generator not the function call.
-        FUNCS_CALL_1[func](self.func, return_True, 10000)
+        FUNCS_CALL_1_LIST[func](self.func, return_True, 10000)
+
+    def time_retTrue_consume(self, func):
+        # use return_True because it's one of the fastest functions that can be
+        # called with one argument. This ensures we are measuring primarly the
+        # generator not the function call.
+        FUNCS_CALL_1_CONSUME[func](self.func, return_True, 10000)
