@@ -72,10 +72,10 @@ FUNCS_CALL_1_LIST = {
     'old1':                           lambda f, it, n: list(f(it, n)),
 }
 FUNCS_CALL_1_CONSUME = {
-    'iteration_utilities.successive': lambda f, it, n: consume(f(it, n)),
-    'toolz.sliding_window':           lambda f, it, n: consume(f(n, it)),
-    'cytoolz.sliding_window':         lambda f, it, n: consume(f(n, it)),
-    'old1':                           lambda f, it, n: consume(f(it, n)),
+    'iteration_utilities.successive': lambda f, it, n: consume(f(it, n), None),
+    'toolz.sliding_window':           lambda f, it, n: consume(f(n, it), None),
+    'cytoolz.sliding_window':         lambda f, it, n: consume(f(n, it), None),
+    'old1':                           lambda f, it, n: consume(f(it, n), None),
 }
 
 
