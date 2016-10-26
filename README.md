@@ -6,6 +6,8 @@ itertools documentation](https://docs.python.org/library/itertools.html#recipes)
 in various ways and with varying additional functions. Given the vast number
 of packages and implementations this repository is meant to benchmark these.
 
+- View the latest benchmarks [here](https://mseifert04.github.io/iutils_benchmarks/)
+
 Included packages
 -----------------
 
@@ -34,10 +36,11 @@ This package uses [asv](https://github.com/spacetelescope/asv), this means that
 it is not exactly intended for comparative benchmarks. But if you look at a
 benchmark just select ``[f]`` as ``x-axis`` to compare the function times:
 
-.. image:: imgs/setting_xaxis.jpeg
+![no alt text](imgs/setting_xaxis.jpg "Set the x-axis")
+
+and some examples of a few benchmarks:
+
+![no alt text](imgs/example1.jpg "Set the x-axis")
 
 
-.. image:: imgs/example1.jpeg
-
-
-.. image:: imgs/example2.jpeg
+![no alt text](imgs/example2.jpg "Set the x-axis")
