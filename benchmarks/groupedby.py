@@ -6,6 +6,8 @@
 #
 # =============================================================================
 
+from collections import defaultdict
+from iteration_utilities import is_even
 from operator import add
 import random
 
@@ -44,12 +46,22 @@ def cytoolz_reduceby():
     return cytoolz.reduceby
 
 
+def alt1():
+    def groupedby(key, iterable):
+        result = defaultdict(list)
+        for rec in iterable:
+            result[key(rec)].append(rec)
+        return result
+    return groupedby
+
+
 FUNCS = {
     'iteration_utilities.groupedby': iteration_utilities_groupedby,
     'toolz.groupby':                 toolz_groupby,
     'cytoolz.groupby':               cytoolz_groupby,
     'toolz.reduceby':                toolz_reduceby,
     'cytoolz.reduceby':              cytoolz_reduceby,
+    'alt1':                          alt1,
 }
 
 
@@ -70,6 +82,7 @@ FUNCS_CALL_1 = {
     'cytoolz.groupby':               lambda f, it, k: f(k, it),
     'toolz.reduceby':                lambda:          None,
     'cytoolz.reduceby':              lambda:          None,
+    'alt1':                          lambda f, it, k: f(k, it),
 }
 
 # iterable, key and reduce
@@ -79,6 +92,7 @@ FUNCS_CALL_2 = {
     'cytoolz.groupby':               lambda:             None,
     'toolz.reduceby':                lambda f, it, k, r: f(k, r, it),
     'cytoolz.reduceby':              lambda f, it, k, r: f(k, r, it),
+    'alt1':                          lambda:             None,
 }
 
 
@@ -88,6 +102,7 @@ FUNCS_CALL_2 = {
 
 
 lst = [random.randint(-50, 50) for _ in range(10000)]
+lst2 = [random.randint(0, 1000) for _ in range(10000)]
 
 
 # =============================================================================
@@ -100,17 +115,24 @@ class X:
               'toolz.groupby',
               'cytoolz.groupby',
               'toolz.reduceby',
-              'cytoolz.reduceby']
+              'cytoolz.reduceby',
+              'alt1',
+              ]
     param_names = ('function')
 
     def setup(self, func):
-        from iteration_utilities import is_even
         self.func = FUNCS[func]()
         self.lst = lst
-        self.key = is_even
+        self.lst2 = lst2
 
-    def time_noargs(self, func):
-        FUNCS_CALL_1[func](self.func, self.lst, self.key)
+    def time_keyEven(self, func):
+        FUNCS_CALL_1[func](self.func, self.lst, is_even)
 
-    def time_reduce(self, func):
-        FUNCS_CALL_2[func](self.func, self.lst, self.key, add)
+    def time_keyEven_reduceAdd(self, func):
+        FUNCS_CALL_2[func](self.func, self.lst, is_even, add)
+
+    def time_keyMod300(self, func):
+        FUNCS_CALL_1[func](self.func, self.lst2, lambda x: x % 300)
+
+    def time_keyMod300_reduceAdd(self, func):
+        FUNCS_CALL_2[func](self.func, self.lst2, lambda x: x % 300, add)

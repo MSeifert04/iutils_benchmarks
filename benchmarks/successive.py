@@ -47,11 +47,36 @@ def old1():
     return successive
 
 
+def alt1():
+    def pairwise(iterable, n):
+        if n != 2:
+            raise NotImplementedError()
+        iterable = iter(iterable)
+        left = next(iterable)
+        for right in iterable:
+            yield left, right
+            left = right
+    return pairwise
+
+
+def alt2():
+    def pairwise(iterable, n):
+        """From itertools.recipes (Python documentation)."""
+        if n != 2:
+            raise NotImplementedError()
+        a, b = tee(iterable)
+        next(b, None)
+        return zip(a, b)
+    return pairwise
+
+
 FUNCS = {
     'iteration_utilities.successive': iteration_utilities_successive,
     'toolz.sliding_window':           toolz_sliding_window,
     'cytoolz.sliding_window':         cytoolz_sliding_window,
     'old1':                           old1,
+    'alt1':                           alt1,
+    'alt2':                           alt2,
 }
 
 
@@ -70,12 +95,16 @@ FUNCS_CALL_1_LIST = {
     'toolz.sliding_window':           lambda f, it, n: list(f(n, it)),
     'cytoolz.sliding_window':         lambda f, it, n: list(f(n, it)),
     'old1':                           lambda f, it, n: list(f(it, n)),
+    'alt1':                           lambda f, it, n: list(f(it, n)),
+    'alt2':                           lambda f, it, n: list(f(it, n)),
 }
 FUNCS_CALL_1_CONSUME = {
     'iteration_utilities.successive': lambda f, it, n: consume(f(it, n), None),
     'toolz.sliding_window':           lambda f, it, n: consume(f(n, it), None),
     'cytoolz.sliding_window':         lambda f, it, n: consume(f(n, it), None),
     'old1':                           lambda f, it, n: consume(f(it, n), None),
+    'alt1':                           lambda f, it, n: consume(f(it, n), None),
+    'alt2':                           lambda f, it, n: consume(f(it, n), None),
 }
 
 
@@ -96,7 +125,10 @@ class X:
     params = ['iteration_utilities.successive',
               'toolz.sliding_window',
               'cytoolz.sliding_window',
-              'old1']
+              'old1',
+              'alt1',
+              'alt2',
+              ]
     param_names = ('function')
 
     def setup(self, func):

@@ -44,6 +44,11 @@ def builtin_sorted():
     return sorted
 
 
+def more_itertools_collate():
+    import more_itertools
+    return more_itertools.collate
+
+
 def old1():
     # This has a Bug with stability with reversed=True!!!
     def merge(*iterables, **kwargs):
@@ -88,6 +93,7 @@ FUNCS = {
     'cytoolz.merge_sorted':      cytoolz_merge_sorted,
     'heapq.merge':               heapq_merge,
     'sorted':                    builtin_sorted,
+    'more-itertools.collate':    more_itertools_collate,
     'old1':                      old1,
 }
 
@@ -108,6 +114,7 @@ FUNCS_CALL_1_LIST = {
     'sorted':                    lambda f, it: f(chain(*it)),
     'toolz.merge_sorted':        lambda f, it: list(f(*it)),
     'cytoolz.merge_sorted':      lambda f, it: list(f(*it)),
+    'more-itertools.collate':    lambda f, it: list(f(*it)),
     'old1':                      lambda f, it: list(f(*it)),
 }
 FUNCS_CALL_1_CONSUME = {
@@ -116,6 +123,7 @@ FUNCS_CALL_1_CONSUME = {
     'sorted':                    lambda:       None,
     'toolz.merge_sorted':        lambda f, it: consume(f(*it), None),
     'cytoolz.merge_sorted':      lambda f, it: consume(f(*it), None),
+    'more-itertools.collate':    lambda:       None,  # much toooo slow!!! > 5s
     'old1':                      lambda f, it: consume(f(*it), None),
 }
 
@@ -143,6 +151,7 @@ class X:
               'heapq.merge',
               'toolz.merge_sorted',
               'cytoolz.merge_sorted',
+              'more-itertools.collate',
               'old1']
     param_names = ('function')
 

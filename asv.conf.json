@@ -56,6 +56,7 @@
         "toolz": [""],
         "cytoolz": [""],
         "pydash": [""],
+        "more-itertools": [""],
     },
 
     // Combinations of libraries/python versions can be excluded/included

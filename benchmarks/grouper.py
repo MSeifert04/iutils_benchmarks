@@ -7,6 +7,7 @@
 # =============================================================================
 
 from iteration_utilities import PY2, consume
+from itertools import islice
 
 if PY2:
     from itertools import izip_longest as zip_longest
@@ -53,6 +54,24 @@ def pydash_chunk():
     return pydash.chunk
 
 
+def more_itertools_chunked():
+    import more_itertools
+    return more_itertools.chunked
+
+
+def nx_itertools_chunk():
+    def chunk(iterable, length):
+        """Taken from https://github.com/nxdevel/nx_itertools."""
+        if length < 0:
+            return
+        iterable = iter(iterable)
+        result = tuple(islice(iterable, length))
+        while result:
+            yield result
+            result = tuple(islice(iterable, length))
+    return chunk
+
+
 def old1():
     def grouper(iterable, n, fillvalue=None):
         args = [iter(iterable)] * n
@@ -62,6 +81,7 @@ def old1():
             return zip_longest(*args, fillvalue=fillvalue)
     return grouper
 
+
 FUNCS = {
     'iteration_utilities.grouper': iteration_utilities_grouper,
     'toolz.partition':             toolz_partition,
@@ -69,6 +89,8 @@ FUNCS = {
     'toolz.partition_all':         toolz_partition_all,
     'cytoolz.partition_all':       cytoolz_partition_all,
     'pydash.chunk':                pydash_chunk,
+    'more-itertools.chunked':      more_itertools_chunked,
+    'nx_itertools.chunk':          nx_itertools_chunk,
     'old1':                        old1,
 }
 
@@ -90,6 +112,8 @@ FUNCS_CALL_1_LIST = {
     'toolz.partition_all':         lambda f, it, n: list(f(n, it)),
     'cytoolz.partition_all':       lambda f, it, n: list(f(n, it)),
     'pydash.chunk':                lambda f, it, n: f(it, n),
+    'more-itertools.chunked':      lambda f, it, n: list(f(it, n)),
+    'nx_itertools.chunk':          lambda f, it, n: list(f(it, n)),
     'old1':                        lambda f, it, n: list(f(it, n)),
 }
 FUNCS_CALL_1_CONSUME = {
@@ -99,6 +123,8 @@ FUNCS_CALL_1_CONSUME = {
     'toolz.partition_all':         lambda f, it, n: consume(f(n, it), None),
     'cytoolz.partition_all':       lambda f, it, n: consume(f(n, it), None),
     'pydash.chunk':                lambda:          None,
+    'more-itertools.chunked':      lambda f, it, n: consume(f(it, n), None),
+    'nx_itertools.chunk':          lambda f, it, n: consume(f(it, n), None),
     'old1':                        lambda f, it, n: consume(f(it, n), None),
 }
 
@@ -123,7 +149,10 @@ class X:
               'toolz.partition_all',
               'cytoolz.partition_all',
               'pydash.chunk',
-              'old1']
+              'more-itertools.chunked',
+              'nx_itertools.chunk',
+              'old1',
+              ]
     param_names = ('function')
 
     def setup(self, func):

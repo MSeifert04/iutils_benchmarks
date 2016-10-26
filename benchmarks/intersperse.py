@@ -88,7 +88,8 @@ class X:
     params = ['iteration_utilities.intersperse',
               'toolz.interpose',
               'cytoolz.interpose',
-              'pydash.intersperse']
+              'pydash.intersperse',
+              ]
     param_names = ('function')
 
     def setup(self, func):

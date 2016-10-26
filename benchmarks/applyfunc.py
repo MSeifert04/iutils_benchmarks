@@ -34,6 +34,11 @@ def cytoolz_iterate():
     return cytoolz.iterate
 
 
+def more_itertools_iterate():
+    import more_itertools
+    return more_itertools.iterate
+
+
 def old1():
     def applyfunc(func, initial):
         value = func(initial)
@@ -49,6 +54,7 @@ FUNCS = {
     'iteration_utilities.applyfunc': iteration_utilities_applyfunc,
     'toolz.iterate':                 toolz_iterate,
     'cytoolz.iterate':               cytoolz_iterate,
+    'more-itertools.iterate':        more_itertools_iterate,
     'old1':                          old1,
 }
 
@@ -68,12 +74,14 @@ FUNCS_CALL_1_LIST = {
     'iteration_utilities.applyfunc': lambda f, ff, i, n: list(islice(f(ff, i), n)),
     'toolz.iterate':                 lambda f, ff, i, n: list(islice(f(ff, i), n)),
     'cytoolz.iterate':               lambda f, ff, i, n: list(islice(f(ff, i), n)),
+    'more-itertools.iterate':        lambda f, ff, i, n: list(islice(f(ff, i), n)),
     'old1':                          lambda f, ff, i, n: list(islice(f(ff, i), n)),
 }
 FUNCS_CALL_1_CONSUME = {
     'iteration_utilities.applyfunc': lambda f, ff, i, n: consume(islice(f(ff, i), n), None),
     'toolz.iterate':                 lambda f, ff, i, n: consume(islice(f(ff, i), n), None),
     'cytoolz.iterate':               lambda f, ff, i, n: consume(islice(f(ff, i), n), None),
+    'more-itertools.iterate':        lambda f, ff, i, n: consume(islice(f(ff, i), n), None),
     'old1':                          lambda f, ff, i, n: consume(islice(f(ff, i), n), None),
 }
 
@@ -92,6 +100,7 @@ class X:
     params = ['iteration_utilities.applyfunc',
               'toolz.iterate',
               'cytoolz.iterate',
+              'more-itertools.iterate',
               'old1']
     param_names = ('function')
 

@@ -26,8 +26,14 @@ def iteration_utilities_count_items():
     return iteration_utilities.count_items
 
 
+def more_itertools_ilen():
+    import more_itertools
+    return more_itertools.ilen
+
+
 FUNCS = {
     'iteration_utilities.count_items': iteration_utilities_count_items,
+    'more-itertools.ilen':             more_itertools_ilen,
 }
 
 
@@ -43,16 +49,19 @@ FUNCS = {
 # iterable
 FUNCS_CALL_1 = {
     'iteration_utilities.count_items': lambda f, it: f(it),
+    'more-itertools.ilen':             lambda f, it: f(it),
 }
 
 # iterable and predicate
 FUNCS_CALL_2 = {
     'iteration_utilities.count_items': lambda f, it, p: f(it, p),
+    'more-itertools.ilen':             lambda:          None,
 }
 
 # iterable and value
 FUNCS_CALL_3 = {
     'iteration_utilities.count_items': lambda f, it, p: f(it, p, eq=True),
+    'more-itertools.ilen':             lambda:          None,
 }
 
 
@@ -71,7 +80,8 @@ lst2 = ([0]*50 + [100])*1000
 
 
 class X:
-    params = ['iteration_utilities.count_items']
+    params = ['iteration_utilities.count_items',
+              'more-itertools.ilen']
     param_names = ('function')
 
     def setup(self, func):
