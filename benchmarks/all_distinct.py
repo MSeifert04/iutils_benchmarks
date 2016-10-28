@@ -60,7 +60,8 @@ FUNCS_CALL_1 = {
 # =============================================================================
 
 
-lst = list(range(100000))
+lst1 = list(range(100000))
+lst2 = list(range(10000)) * 10
 
 
 # =============================================================================
@@ -76,7 +77,11 @@ class X:
 
     def setup(self, func):
         self.func = FUNCS[func]()
-        self.lst = lst
+        self.lst1 = lst1
+        self.lst2 = lst2
 
     def time_noargs(self, func):
-        FUNCS_CALL_1[func](self.func, self.lst)
+        FUNCS_CALL_1[func](self.func, self.lst1)
+
+    def time_noargs_notdistinct(self, func):
+        FUNCS_CALL_1[func](self.func, self.lst2)

@@ -139,6 +139,10 @@ lst500 = [sorted([random.randint(0, 1000)
                   for _ in range(random.randint(10, 30))])
           for _ in range(500)]
 
+lst500_2 = [sorted([random.randint(0, 2)
+                    for _ in range(random.randint(10, 30))])
+            for _ in range(500)]
+
 
 # =============================================================================
 # Benchmark
@@ -159,6 +163,7 @@ class X:
         self.func = FUNCS[func]()
         self.lst10 = lst10
         self.lst500 = lst500
+        self.lst500_2 = lst500_2
 
     def time_fewiterableslong(self, func):
         FUNCS_CALL_1_LIST[func](self.func, self.lst10)
@@ -171,3 +176,9 @@ class X:
 
     def time_manyiterablesshort_consume(self, func):
         FUNCS_CALL_1_CONSUME[func](self.func, self.lst500)
+
+    def time_manyiterablesshort_fewdups(self, func):
+        FUNCS_CALL_1_LIST[func](self.func, self.lst500_2)
+
+    def time_manyiterablesshort_fewdups_consume(self, func):
+        FUNCS_CALL_1_CONSUME[func](self.func, self.lst500_2)
