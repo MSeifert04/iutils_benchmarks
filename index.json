@@ -1,0 +1,1856 @@
+{
+    "benchmarks": {
+        "accumulate.X.time_add": {
+            "code": "def time_add(self, func):\n    FUNCS_CALL_2_LIST[func](self.func, self.lst, add)\n",
+            "goal_time": 2.0,
+            "name": "accumulate.X.time_add",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.accumulate'",
+                    "'itertools.accumulate'",
+                    "'toolz.accumulate'",
+                    "'cytoolz.accumulate'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "accumulate.X.time_add",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "accumulate.X.time_add_consume": {
+            "code": "def time_add_consume(self, func):\n    FUNCS_CALL_2_CONSUME[func](self.func, self.lst, add)\n",
+            "goal_time": 2.0,
+            "name": "accumulate.X.time_add_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.accumulate'",
+                    "'itertools.accumulate'",
+                    "'toolz.accumulate'",
+                    "'cytoolz.accumulate'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "accumulate.X.time_add_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "accumulate.X.time_noargs": {
+            "code": "def time_noargs(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst)\n",
+            "goal_time": 2.0,
+            "name": "accumulate.X.time_noargs",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.accumulate'",
+                    "'itertools.accumulate'",
+                    "'toolz.accumulate'",
+                    "'cytoolz.accumulate'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "accumulate.X.time_noargs",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "accumulate.X.time_noargs_consume": {
+            "code": "def time_noargs_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst)\n",
+            "goal_time": 2.0,
+            "name": "accumulate.X.time_noargs_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.accumulate'",
+                    "'itertools.accumulate'",
+                    "'toolz.accumulate'",
+                    "'cytoolz.accumulate'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "accumulate.X.time_noargs_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "all_distinct.X.time_noargs": {
+            "code": "def time_noargs(self, func):\n    FUNCS_CALL_1[func](self.func, self.lst1)\n",
+            "goal_time": 2.0,
+            "name": "all_distinct.X.time_noargs",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.all_distinct'",
+                    "'toolz.is_distinct'",
+                    "'cytoolz.is_distinct'"
+                ]
+            ],
+            "pretty_name": "all_distinct.X.time_noargs",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "all_distinct.X.time_noargs_notdistinct": {
+            "code": "def time_noargs_notdistinct(self, func):\n    FUNCS_CALL_1[func](self.func, self.lst2)\n",
+            "goal_time": 2.0,
+            "name": "all_distinct.X.time_noargs_notdistinct",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.all_distinct'",
+                    "'toolz.is_distinct'",
+                    "'cytoolz.is_distinct'"
+                ]
+            ],
+            "pretty_name": "all_distinct.X.time_noargs_notdistinct",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "all_equal.X.time_noargs": {
+            "code": "def time_noargs(self, func):\n    FUNCS_CALL_1[func](self.func, self.lst)\n",
+            "goal_time": 2.0,
+            "name": "all_equal.X.time_noargs",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.all_equal'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "all_equal.X.time_noargs",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "all_isinstance.X.time_noargs": {
+            "code": "def time_noargs(self, func):\n    FUNCS_CALL_1[func](self.func, self.lst, int)\n",
+            "goal_time": 2.0,
+            "name": "all_isinstance.X.time_noargs",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.all_isinstance'",
+                    "'old_1'"
+                ]
+            ],
+            "pretty_name": "all_isinstance.X.time_noargs",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "all_monotone.X.time_noargs": {
+            "code": "def time_noargs(self, func):\n    FUNCS_CALL_1[func](self.func, self.lst)\n",
+            "goal_time": 2.0,
+            "name": "all_monotone.X.time_noargs",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.all_monotone'"
+                ]
+            ],
+            "pretty_name": "all_monotone.X.time_noargs",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "applyfunc.X.time_retTrue": {
+            "code": "def time_retTrue(self, func):\n    # use return_True because it's one of the fastest functions that can be\n    # called with one argument. This ensures we are measuring primarly the\n    # generator not the function call.\n    FUNCS_CALL_1_LIST[func](self.func, return_True, 1, 10000)\n",
+            "goal_time": 2.0,
+            "name": "applyfunc.X.time_retTrue",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.applyfunc'",
+                    "'toolz.iterate'",
+                    "'cytoolz.iterate'",
+                    "'more-itertools.iterate'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "applyfunc.X.time_retTrue",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "applyfunc.X.time_retTrue_consume": {
+            "code": "def time_retTrue_consume(self, func):\n    # use return_True because it's one of the fastest functions that can be\n    # called with one argument. This ensures we are measuring primarly the\n    # generator not the function call.\n    FUNCS_CALL_1_CONSUME[func](self.func, return_True, 1, 10000)\n",
+            "goal_time": 2.0,
+            "name": "applyfunc.X.time_retTrue_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.applyfunc'",
+                    "'toolz.iterate'",
+                    "'cytoolz.iterate'",
+                    "'more-itertools.iterate'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "applyfunc.X.time_retTrue_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "argmax.X.time_key": {
+            "code": "def time_key(self, func):\n    FUNCS_CALL_2[func](self.func, self.lst, abs)\n",
+            "goal_time": 2.0,
+            "name": "argmax.X.time_key",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.argmax'"
+                ]
+            ],
+            "pretty_name": "argmax.X.time_key",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "argmax.X.time_noargs": {
+            "code": "def time_noargs(self, func):\n    FUNCS_CALL_1[func](self.func, self.lst)\n",
+            "goal_time": 2.0,
+            "name": "argmax.X.time_noargs",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.argmax'"
+                ]
+            ],
+            "pretty_name": "argmax.X.time_noargs",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "clamp.X.time_large": {
+            "code": "def time_large(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst, 10,  99990)\n",
+            "goal_time": 2.0,
+            "name": "clamp.X.time_large",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.clamp'",
+                    "'old1'",
+                    "'old2'"
+                ]
+            ],
+            "pretty_name": "clamp.X.time_large",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "clamp.X.time_large_consume": {
+            "code": "def time_large_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst, 10,  99990)\n",
+            "goal_time": 2.0,
+            "name": "clamp.X.time_large_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.clamp'",
+                    "'old1'",
+                    "'old2'"
+                ]
+            ],
+            "pretty_name": "clamp.X.time_large_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "clamp.X.time_small": {
+            "code": "def time_small(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst, 5000,  10000)\n",
+            "goal_time": 2.0,
+            "name": "clamp.X.time_small",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.clamp'",
+                    "'old1'",
+                    "'old2'"
+                ]
+            ],
+            "pretty_name": "clamp.X.time_small",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "clamp.X.time_small_consume": {
+            "code": "def time_small_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst, 5000,  10000)\n",
+            "goal_time": 2.0,
+            "name": "clamp.X.time_small_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.clamp'",
+                    "'old1'",
+                    "'old2'"
+                ]
+            ],
+            "pretty_name": "clamp.X.time_small_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "count_items.X.time_equals": {
+            "code": "def time_equals(self, func):\n    FUNCS_CALL_3[func](self.func, self.lst2, 100)\n",
+            "goal_time": 2.0,
+            "name": "count_items.X.time_equals",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.count_items'",
+                    "'more-itertools.ilen'"
+                ]
+            ],
+            "pretty_name": "count_items.X.time_equals",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "count_items.X.time_noargs": {
+            "code": "def time_noargs(self, func):\n    FUNCS_CALL_1[func](self.func, self.lst)\n",
+            "goal_time": 2.0,
+            "name": "count_items.X.time_noargs",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.count_items'",
+                    "'more-itertools.ilen'"
+                ]
+            ],
+            "pretty_name": "count_items.X.time_noargs",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "count_items.X.time_predicate": {
+            "code": "def time_predicate(self, func):\n    FUNCS_CALL_2[func](self.func, self.lst2, lessthan50)\n",
+            "goal_time": 2.0,
+            "name": "count_items.X.time_predicate",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.count_items'",
+                    "'more-itertools.ilen'"
+                ]
+            ],
+            "pretty_name": "count_items.X.time_predicate",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "duplicates.X.time_keyabs": {
+            "code": "def time_keyabs(self, func):\n    FUNCS_CALL_2_LIST[func](self.func, self.lst, abs)\n",
+            "goal_time": 2.0,
+            "name": "duplicates.X.time_keyabs",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.duplicates'"
+                ]
+            ],
+            "pretty_name": "duplicates.X.time_keyabs",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "duplicates.X.time_keyabs_consume": {
+            "code": "def time_keyabs_consume(self, func):\n    FUNCS_CALL_2_CONSUME[func](self.func, self.lst, abs)\n",
+            "goal_time": 2.0,
+            "name": "duplicates.X.time_keyabs_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.duplicates'"
+                ]
+            ],
+            "pretty_name": "duplicates.X.time_keyabs_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "duplicates.X.time_noargs": {
+            "code": "def time_noargs(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst)\n",
+            "goal_time": 2.0,
+            "name": "duplicates.X.time_noargs",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.duplicates'"
+                ]
+            ],
+            "pretty_name": "duplicates.X.time_noargs",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "duplicates.X.time_noargs_consume": {
+            "code": "def time_noargs_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst)\n",
+            "goal_time": 2.0,
+            "name": "duplicates.X.time_noargs_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.duplicates'"
+                ]
+            ],
+            "pretty_name": "duplicates.X.time_noargs_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "flatten.X.time_depth1": {
+            "code": "def time_depth1(self, func):\n    FUNCS_CALL_2_LIST[func](self.func, self.lst, 1)\n",
+            "goal_time": 2.0,
+            "name": "flatten.X.time_depth1",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.deepflatten'",
+                    "'iteration_utilities.flatten'",
+                    "'pydash.flatten_deep'",
+                    "'pydash.flatten'",
+                    "'old1'",
+                    "'old2'"
+                ]
+            ],
+            "pretty_name": "flatten.X.time_depth1",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "flatten.X.time_depth2": {
+            "code": "def time_depth2(self, func):\n    FUNCS_CALL_3_LIST[func](self.func, self.lst, 2)\n",
+            "goal_time": 2.0,
+            "name": "flatten.X.time_depth2",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.deepflatten'",
+                    "'iteration_utilities.flatten'",
+                    "'pydash.flatten_deep'",
+                    "'pydash.flatten'",
+                    "'old1'",
+                    "'old2'"
+                ]
+            ],
+            "pretty_name": "flatten.X.time_depth2",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "flatten.X.time_ignores": {
+            "code": "def time_ignores(self, func):\n    FUNCS_CALL_5_LIST[func](self.func, self.lst, tuple)\n",
+            "goal_time": 2.0,
+            "name": "flatten.X.time_ignores",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.deepflatten'",
+                    "'iteration_utilities.flatten'",
+                    "'pydash.flatten_deep'",
+                    "'pydash.flatten'",
+                    "'old1'",
+                    "'old2'"
+                ]
+            ],
+            "pretty_name": "flatten.X.time_ignores",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "flatten.X.time_noargs": {
+            "code": "def time_noargs(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst)\n",
+            "goal_time": 2.0,
+            "name": "flatten.X.time_noargs",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.deepflatten'",
+                    "'iteration_utilities.flatten'",
+                    "'pydash.flatten_deep'",
+                    "'pydash.flatten'",
+                    "'old1'",
+                    "'old2'"
+                ]
+            ],
+            "pretty_name": "flatten.X.time_noargs",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "flatten.X.time_noargs_consume": {
+            "code": "def time_noargs_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst)\n",
+            "goal_time": 2.0,
+            "name": "flatten.X.time_noargs_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.deepflatten'",
+                    "'iteration_utilities.flatten'",
+                    "'pydash.flatten_deep'",
+                    "'pydash.flatten'",
+                    "'old1'",
+                    "'old2'"
+                ]
+            ],
+            "pretty_name": "flatten.X.time_noargs_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "flatten.X.time_types": {
+            "code": "def time_types(self, func):\n    FUNCS_CALL_4_LIST[func](self.func, self.lst, list)\n",
+            "goal_time": 2.0,
+            "name": "flatten.X.time_types",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.deepflatten'",
+                    "'iteration_utilities.flatten'",
+                    "'pydash.flatten_deep'",
+                    "'pydash.flatten'",
+                    "'old1'",
+                    "'old2'"
+                ]
+            ],
+            "pretty_name": "flatten.X.time_types",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "groupedby.X.time_keyEven": {
+            "code": "def time_keyEven(self, func):\n    FUNCS_CALL_1[func](self.func, self.lst, is_even)\n",
+            "goal_time": 2.0,
+            "name": "groupedby.X.time_keyEven",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.groupedby'",
+                    "'toolz.groupby'",
+                    "'cytoolz.groupby'",
+                    "'toolz.reduceby'",
+                    "'cytoolz.reduceby'",
+                    "'alt1'"
+                ]
+            ],
+            "pretty_name": "groupedby.X.time_keyEven",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "groupedby.X.time_keyEven_reduceAdd": {
+            "code": "def time_keyEven_reduceAdd(self, func):\n    FUNCS_CALL_2[func](self.func, self.lst, is_even, add)\n",
+            "goal_time": 2.0,
+            "name": "groupedby.X.time_keyEven_reduceAdd",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.groupedby'",
+                    "'toolz.groupby'",
+                    "'cytoolz.groupby'",
+                    "'toolz.reduceby'",
+                    "'cytoolz.reduceby'",
+                    "'alt1'"
+                ]
+            ],
+            "pretty_name": "groupedby.X.time_keyEven_reduceAdd",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "groupedby.X.time_keyMod300": {
+            "code": "def time_keyMod300(self, func):\n    FUNCS_CALL_1[func](self.func, self.lst2, lambda x: x % 300)\n",
+            "goal_time": 2.0,
+            "name": "groupedby.X.time_keyMod300",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.groupedby'",
+                    "'toolz.groupby'",
+                    "'cytoolz.groupby'",
+                    "'toolz.reduceby'",
+                    "'cytoolz.reduceby'",
+                    "'alt1'"
+                ]
+            ],
+            "pretty_name": "groupedby.X.time_keyMod300",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "groupedby.X.time_keyMod300_reduceAdd": {
+            "code": "def time_keyMod300_reduceAdd(self, func):\n    FUNCS_CALL_2[func](self.func, self.lst2, lambda x: x % 300, add)\n",
+            "goal_time": 2.0,
+            "name": "groupedby.X.time_keyMod300_reduceAdd",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.groupedby'",
+                    "'toolz.groupby'",
+                    "'cytoolz.groupby'",
+                    "'toolz.reduceby'",
+                    "'cytoolz.reduceby'",
+                    "'alt1'"
+                ]
+            ],
+            "pretty_name": "groupedby.X.time_keyMod300_reduceAdd",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "grouper.X.time_n2": {
+            "code": "def time_n2(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst, 2)\n",
+            "goal_time": 2.0,
+            "name": "grouper.X.time_n2",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.grouper'",
+                    "'toolz.partition'",
+                    "'cytoolz.partition'",
+                    "'toolz.partition_all'",
+                    "'cytoolz.partition_all'",
+                    "'pydash.chunk'",
+                    "'more-itertools.chunked'",
+                    "'nx_itertools.chunk'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "grouper.X.time_n2",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "grouper.X.time_n2_consume": {
+            "code": "def time_n2_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst, 2)\n",
+            "goal_time": 2.0,
+            "name": "grouper.X.time_n2_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.grouper'",
+                    "'toolz.partition'",
+                    "'cytoolz.partition'",
+                    "'toolz.partition_all'",
+                    "'cytoolz.partition_all'",
+                    "'pydash.chunk'",
+                    "'more-itertools.chunked'",
+                    "'nx_itertools.chunk'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "grouper.X.time_n2_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "grouper.X.time_n50": {
+            "code": "def time_n50(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst, 50)\n",
+            "goal_time": 2.0,
+            "name": "grouper.X.time_n50",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.grouper'",
+                    "'toolz.partition'",
+                    "'cytoolz.partition'",
+                    "'toolz.partition_all'",
+                    "'cytoolz.partition_all'",
+                    "'pydash.chunk'",
+                    "'more-itertools.chunked'",
+                    "'nx_itertools.chunk'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "grouper.X.time_n50",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "grouper.X.time_n50_consume": {
+            "code": "def time_n50_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst, 50)\n",
+            "goal_time": 2.0,
+            "name": "grouper.X.time_n50_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.grouper'",
+                    "'toolz.partition'",
+                    "'cytoolz.partition'",
+                    "'toolz.partition_all'",
+                    "'cytoolz.partition_all'",
+                    "'pydash.chunk'",
+                    "'more-itertools.chunked'",
+                    "'nx_itertools.chunk'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "grouper.X.time_n50_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "intersperse.X.time_with_x": {
+            "code": "def time_with_x(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst, 'x')\n",
+            "goal_time": 2.0,
+            "name": "intersperse.X.time_with_x",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.intersperse'",
+                    "'toolz.interpose'",
+                    "'cytoolz.interpose'",
+                    "'pydash.intersperse'"
+                ]
+            ],
+            "pretty_name": "intersperse.X.time_with_x",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "intersperse.X.time_with_x_consume": {
+            "code": "def time_with_x_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst, 'x')\n",
+            "goal_time": 2.0,
+            "name": "intersperse.X.time_with_x_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.intersperse'",
+                    "'toolz.interpose'",
+                    "'cytoolz.interpose'",
+                    "'pydash.intersperse'"
+                ]
+            ],
+            "pretty_name": "intersperse.X.time_with_x_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "merge.X.time_fewiterableslong": {
+            "code": "def time_fewiterableslong(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst10)\n",
+            "goal_time": 2.0,
+            "name": "merge.X.time_fewiterableslong",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.merge'",
+                    "'sorted'",
+                    "'heapq.merge'",
+                    "'toolz.merge_sorted'",
+                    "'cytoolz.merge_sorted'",
+                    "'more-itertools.collate'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "merge.X.time_fewiterableslong",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "merge.X.time_fewiterableslong_consume": {
+            "code": "def time_fewiterableslong_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst10)\n",
+            "goal_time": 2.0,
+            "name": "merge.X.time_fewiterableslong_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.merge'",
+                    "'sorted'",
+                    "'heapq.merge'",
+                    "'toolz.merge_sorted'",
+                    "'cytoolz.merge_sorted'",
+                    "'more-itertools.collate'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "merge.X.time_fewiterableslong_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "merge.X.time_manyiterablesshort": {
+            "code": "def time_manyiterablesshort(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst500)\n",
+            "goal_time": 2.0,
+            "name": "merge.X.time_manyiterablesshort",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.merge'",
+                    "'sorted'",
+                    "'heapq.merge'",
+                    "'toolz.merge_sorted'",
+                    "'cytoolz.merge_sorted'",
+                    "'more-itertools.collate'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "merge.X.time_manyiterablesshort",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "merge.X.time_manyiterablesshort_consume": {
+            "code": "def time_manyiterablesshort_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst500)\n",
+            "goal_time": 2.0,
+            "name": "merge.X.time_manyiterablesshort_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.merge'",
+                    "'sorted'",
+                    "'heapq.merge'",
+                    "'toolz.merge_sorted'",
+                    "'cytoolz.merge_sorted'",
+                    "'more-itertools.collate'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "merge.X.time_manyiterablesshort_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "merge.X.time_manyiterablesshort_fewdups": {
+            "code": "def time_manyiterablesshort_fewdups(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst500_2)\n",
+            "goal_time": 2.0,
+            "name": "merge.X.time_manyiterablesshort_fewdups",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.merge'",
+                    "'sorted'",
+                    "'heapq.merge'",
+                    "'toolz.merge_sorted'",
+                    "'cytoolz.merge_sorted'",
+                    "'more-itertools.collate'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "merge.X.time_manyiterablesshort_fewdups",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "merge.X.time_manyiterablesshort_fewdups_consume": {
+            "code": "def time_manyiterablesshort_fewdups_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst500_2)\n",
+            "goal_time": 2.0,
+            "name": "merge.X.time_manyiterablesshort_fewdups_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.merge'",
+                    "'sorted'",
+                    "'heapq.merge'",
+                    "'toolz.merge_sorted'",
+                    "'cytoolz.merge_sorted'",
+                    "'more-itertools.collate'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "merge.X.time_manyiterablesshort_fewdups_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "minmax.X.time_customclass": {
+            "code": "def time_customclass(self, func):\n    FUNCS_CALL_1[func](self.func, self.lst2)\n",
+            "goal_time": 2.0,
+            "name": "minmax.X.time_customclass",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.minmax'",
+                    "'min_max'",
+                    "'alt1'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "minmax.X.time_customclass",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "minmax.X.time_key": {
+            "code": "def time_key(self, func):\n    FUNCS_CALL_2[func](self.func, self.lst, abs)\n",
+            "goal_time": 2.0,
+            "name": "minmax.X.time_key",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.minmax'",
+                    "'min_max'",
+                    "'alt1'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "minmax.X.time_key",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "minmax.X.time_noargs": {
+            "code": "def time_noargs(self, func):\n    FUNCS_CALL_1[func](self.func, self.lst)\n",
+            "goal_time": 2.0,
+            "name": "minmax.X.time_noargs",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.minmax'",
+                    "'min_max'",
+                    "'alt1'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "minmax.X.time_noargs",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "partition.X.time_noargs": {
+            "code": "def time_noargs(self, func):\n    FUNCS_CALL_1[func](self.func, self.lst)\n",
+            "goal_time": 2.0,
+            "name": "partition.X.time_noargs",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.partition'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "partition.X.time_noargs",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "partition.X.time_pred": {
+            "code": "def time_pred(self, func):\n    FUNCS_CALL_2[func](self.func, self.lst, is_even)\n",
+            "goal_time": 2.0,
+            "name": "partition.X.time_pred",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.partition'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "partition.X.time_pred",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "repeatfunc.X.time_retTrue": {
+            "code": "def time_retTrue(self, func):\n    # use return_True because it's one of the fastest functions that can be\n    # called with one argument. This ensures we are measuring primarly the\n    # generator not the function call.\n    FUNCS_CALL_1_LIST[func](self.func, return_True, 50000)\n",
+            "goal_time": 2.0,
+            "name": "repeatfunc.X.time_retTrue",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.repeatfunc'"
+                ]
+            ],
+            "pretty_name": "repeatfunc.X.time_retTrue",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "repeatfunc.X.time_retTrue_consume": {
+            "code": "def time_retTrue_consume(self, func):\n    # use return_True because it's one of the fastest functions that can be\n    # called with one argument. This ensures we are measuring primarly the\n    # generator not the function call.\n    FUNCS_CALL_1_CONSUME[func](self.func, return_True, 50000)\n",
+            "goal_time": 2.0,
+            "name": "repeatfunc.X.time_retTrue_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.repeatfunc'"
+                ]
+            ],
+            "pretty_name": "repeatfunc.X.time_retTrue_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "roundrobin.X.time_fewiterableslong": {
+            "code": "def time_fewiterableslong(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst10)\n",
+            "goal_time": 2.0,
+            "name": "roundrobin.X.time_fewiterableslong",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.roundrobin'",
+                    "'toolz.interleave'",
+                    "'cytoolz.interleave'",
+                    "'pydash.interleave'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "roundrobin.X.time_fewiterableslong",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "roundrobin.X.time_fewiterableslong_consume": {
+            "code": "def time_fewiterableslong_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst10)\n",
+            "goal_time": 2.0,
+            "name": "roundrobin.X.time_fewiterableslong_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.roundrobin'",
+                    "'toolz.interleave'",
+                    "'cytoolz.interleave'",
+                    "'pydash.interleave'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "roundrobin.X.time_fewiterableslong_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "roundrobin.X.time_manyiterablesshort": {
+            "code": "def time_manyiterablesshort(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst500)\n",
+            "goal_time": 2.0,
+            "name": "roundrobin.X.time_manyiterablesshort",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.roundrobin'",
+                    "'toolz.interleave'",
+                    "'cytoolz.interleave'",
+                    "'pydash.interleave'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "roundrobin.X.time_manyiterablesshort",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "roundrobin.X.time_manyiterablesshort_consume": {
+            "code": "def time_manyiterablesshort_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst500)\n",
+            "goal_time": 2.0,
+            "name": "roundrobin.X.time_manyiterablesshort_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.roundrobin'",
+                    "'toolz.interleave'",
+                    "'cytoolz.interleave'",
+                    "'pydash.interleave'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "roundrobin.X.time_manyiterablesshort_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "split.X.time_element": {
+            "code": "def time_element(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst, 1)\n",
+            "goal_time": 2.0,
+            "name": "split.X.time_element",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.split'"
+                ]
+            ],
+            "pretty_name": "split.X.time_element",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "split.X.time_element_consume": {
+            "code": "def time_element_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst, 1)\n",
+            "goal_time": 2.0,
+            "name": "split.X.time_element_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.split'"
+                ]
+            ],
+            "pretty_name": "split.X.time_element_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "split.X.time_key": {
+            "code": "def time_key(self, func):\n    FUNCS_CALL_2_LIST[func](self.func, self.lst, self.key)\n",
+            "goal_time": 2.0,
+            "name": "split.X.time_key",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.split'"
+                ]
+            ],
+            "pretty_name": "split.X.time_key",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "split.X.time_key_consume": {
+            "code": "def time_key_consume(self, func):\n    FUNCS_CALL_2_CONSUME[func](self.func, self.lst, self.key)\n",
+            "goal_time": 2.0,
+            "name": "split.X.time_key_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.split'"
+                ]
+            ],
+            "pretty_name": "split.X.time_key_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "successive.X.time_n2": {
+            "code": "def time_n2(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst, 2)\n",
+            "goal_time": 2.0,
+            "name": "successive.X.time_n2",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.successive'",
+                    "'toolz.sliding_window'",
+                    "'cytoolz.sliding_window'",
+                    "'old1'",
+                    "'alt1'",
+                    "'alt2'"
+                ]
+            ],
+            "pretty_name": "successive.X.time_n2",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "successive.X.time_n2_consume": {
+            "code": "def time_n2_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst, 2)\n",
+            "goal_time": 2.0,
+            "name": "successive.X.time_n2_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.successive'",
+                    "'toolz.sliding_window'",
+                    "'cytoolz.sliding_window'",
+                    "'old1'",
+                    "'alt1'",
+                    "'alt2'"
+                ]
+            ],
+            "pretty_name": "successive.X.time_n2_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "successive.X.time_n50": {
+            "code": "def time_n50(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst, 50)\n",
+            "goal_time": 2.0,
+            "name": "successive.X.time_n50",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.successive'",
+                    "'toolz.sliding_window'",
+                    "'cytoolz.sliding_window'",
+                    "'old1'",
+                    "'alt1'",
+                    "'alt2'"
+                ]
+            ],
+            "pretty_name": "successive.X.time_n50",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "successive.X.time_n50_consume": {
+            "code": "def time_n50_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst, 50)\n",
+            "goal_time": 2.0,
+            "name": "successive.X.time_n50_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.successive'",
+                    "'toolz.sliding_window'",
+                    "'cytoolz.sliding_window'",
+                    "'old1'",
+                    "'alt1'",
+                    "'alt2'"
+                ]
+            ],
+            "pretty_name": "successive.X.time_n50_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "tabulate.X.time_retTrue": {
+            "code": "def time_retTrue(self, func):\n    # use return_True because it's one of the fastest functions that can be\n    # called with one argument. This ensures we are measuring primarly the\n    # generator not the function call.\n    FUNCS_CALL_1_LIST[func](self.func, return_True, 10000)\n",
+            "goal_time": 2.0,
+            "name": "tabulate.X.time_retTrue",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.tabulate'"
+                ]
+            ],
+            "pretty_name": "tabulate.X.time_retTrue",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "tabulate.X.time_retTrue_consume": {
+            "code": "def time_retTrue_consume(self, func):\n    # use return_True because it's one of the fastest functions that can be\n    # called with one argument. This ensures we are measuring primarly the\n    # generator not the function call.\n    FUNCS_CALL_1_CONSUME[func](self.func, return_True, 10000)\n",
+            "goal_time": 2.0,
+            "name": "tabulate.X.time_retTrue_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.tabulate'"
+                ]
+            ],
+            "pretty_name": "tabulate.X.time_retTrue_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "unique_everseen.X.time_key_square": {
+            "code": "def time_key_square(self, func):\n    FUNCS_CALL_2_LIST[func](self.func, self.lst, square)\n",
+            "goal_time": 2.0,
+            "name": "unique_everseen.X.time_key_square",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.unique_everseen'",
+                    "'toolz.unique'",
+                    "'cytoolz.unique'",
+                    "'pydash.unique'",
+                    "'old1'",
+                    "'alt1'"
+                ]
+            ],
+            "pretty_name": "unique_everseen.X.time_key_square",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "unique_everseen.X.time_key_square_consume": {
+            "code": "def time_key_square_consume(self, func):\n    FUNCS_CALL_2_CONSUME[func](self.func, self.lst, square)\n",
+            "goal_time": 2.0,
+            "name": "unique_everseen.X.time_key_square_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.unique_everseen'",
+                    "'toolz.unique'",
+                    "'cytoolz.unique'",
+                    "'pydash.unique'",
+                    "'old1'",
+                    "'alt1'"
+                ]
+            ],
+            "pretty_name": "unique_everseen.X.time_key_square_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "unique_everseen.X.time_noargs_fewduplicates": {
+            "code": "def time_noargs_fewduplicates(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst2)\n",
+            "goal_time": 2.0,
+            "name": "unique_everseen.X.time_noargs_fewduplicates",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.unique_everseen'",
+                    "'toolz.unique'",
+                    "'cytoolz.unique'",
+                    "'pydash.unique'",
+                    "'old1'",
+                    "'alt1'"
+                ]
+            ],
+            "pretty_name": "unique_everseen.X.time_noargs_fewduplicates",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "unique_everseen.X.time_noargs_fewduplicates_consume": {
+            "code": "def time_noargs_fewduplicates_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst2)\n",
+            "goal_time": 2.0,
+            "name": "unique_everseen.X.time_noargs_fewduplicates_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.unique_everseen'",
+                    "'toolz.unique'",
+                    "'cytoolz.unique'",
+                    "'pydash.unique'",
+                    "'old1'",
+                    "'alt1'"
+                ]
+            ],
+            "pretty_name": "unique_everseen.X.time_noargs_fewduplicates_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "unique_everseen.X.time_noargs_manyduplicates": {
+            "code": "def time_noargs_manyduplicates(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst)\n",
+            "goal_time": 2.0,
+            "name": "unique_everseen.X.time_noargs_manyduplicates",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.unique_everseen'",
+                    "'toolz.unique'",
+                    "'cytoolz.unique'",
+                    "'pydash.unique'",
+                    "'old1'",
+                    "'alt1'"
+                ]
+            ],
+            "pretty_name": "unique_everseen.X.time_noargs_manyduplicates",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "unique_everseen.X.time_noargs_manyduplicates_consume": {
+            "code": "def time_noargs_manyduplicates_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst)\n",
+            "goal_time": 2.0,
+            "name": "unique_everseen.X.time_noargs_manyduplicates_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.unique_everseen'",
+                    "'toolz.unique'",
+                    "'cytoolz.unique'",
+                    "'pydash.unique'",
+                    "'old1'",
+                    "'alt1'"
+                ]
+            ],
+            "pretty_name": "unique_everseen.X.time_noargs_manyduplicates_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "unique_justseen.X.time_keyabs": {
+            "code": "def time_keyabs(self, func):\n    FUNCS_CALL_2_LIST[func](self.func, self.lst, abs)\n",
+            "goal_time": 2.0,
+            "name": "unique_justseen.X.time_keyabs",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.unique_justseen'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "unique_justseen.X.time_keyabs",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "unique_justseen.X.time_keyabs_consume": {
+            "code": "def time_keyabs_consume(self, func):\n    FUNCS_CALL_2_CONSUME[func](self.func, self.lst, abs)\n",
+            "goal_time": 2.0,
+            "name": "unique_justseen.X.time_keyabs_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.unique_justseen'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "unique_justseen.X.time_keyabs_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "unique_justseen.X.time_noargs": {
+            "code": "def time_noargs(self, func):\n    FUNCS_CALL_1_LIST[func](self.func, self.lst)\n",
+            "goal_time": 2.0,
+            "name": "unique_justseen.X.time_noargs",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.unique_justseen'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "unique_justseen.X.time_noargs",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        },
+        "unique_justseen.X.time_noargs_consume": {
+            "code": "def time_noargs_consume(self, func):\n    FUNCS_CALL_1_CONSUME[func](self.func, self.lst)\n",
+            "goal_time": 2.0,
+            "name": "unique_justseen.X.time_noargs_consume",
+            "number": 0,
+            "param_names": [
+                "f"
+            ],
+            "params": [
+                [
+                    "'iteration_utilities.unique_justseen'",
+                    "'old1'"
+                ]
+            ],
+            "pretty_name": "unique_justseen.X.time_noargs_consume",
+            "repeat": 0,
+            "timeout": 60.0,
+            "type": "time",
+            "unit": "seconds"
+        }
+    },
+    "graph_param_list": [
+        {
+            "arch": "unknown",
+            "branch": "master",
+            "cpu": "unknown",
+            "cytoolz": "",
+            "machine": "AppVeyor",
+            "more-itertools": "",
+            "os": "AppVeyor",
+            "pydash": "",
+            "python": "3.5",
+            "ram": "unknown",
+            "toolz": ""
+        },
+        {
+            "arch": "unknown",
+            "branch": "master",
+            "cpu": "unknown",
+            "cytoolz": "",
+            "machine": "AppVeyor",
+            "more-itertools": "",
+            "os": "AppVeyor",
+            "pydash": "",
+            "python": "2.7",
+            "ram": "unknown",
+            "toolz": ""
+        }
+    ],
+    "hash_length": 8,
+    "machines": {
+        "AppVeyor": {
+            "arch": "unknown",
+            "cpu": "unknown",
+            "machine": "AppVeyor",
+            "os": "AppVeyor",
+            "ram": "unknown",
+            "version": 1
+        }
+    },
+    "pages": [
+        [
+            "",
+            "Grid view",
+            "Display as a agrid"
+        ],
+        [
+            "summarylist",
+            "List view",
+            "Display as a list"
+        ],
+        [
+            "regressions",
+            "Show regressions",
+            "Display information about recent regressions"
+        ]
+    ],
+    "params": {
+        "arch": [
+            "unknown"
+        ],
+        "branch": [
+            "master"
+        ],
+        "cpu": [
+            "unknown"
+        ],
+        "cytoolz": [
+            ""
+        ],
+        "machine": [
+            "AppVeyor"
+        ],
+        "more-itertools": [
+            ""
+        ],
+        "os": [
+            "AppVeyor"
+        ],
+        "pydash": [
+            ""
+        ],
+        "python": [
+            "2.7",
+            "3.5"
+        ],
+        "ram": [
+            "unknown"
+        ],
+        "toolz": [
+            ""
+        ]
+    },
+    "project": "iteration_utilities",
+    "project_url": "https://github.com/MSeifert04/iteration_utilities",
+    "revision_to_date": {
+        "2": 1473697208000,
+        "3": 1473773732000,
+        "26": 1473991159000,
+        "309": 1476308624000,
+        "432": 1477454513000,
+        "433": 1477458876000,
+        "434": 1477459312000,
+        "436": 1477460443000,
+        "458": 1477886329000,
+        "474": 1478280278000,
+        "475": 1478280905000,
+        "507": 1478995569000,
+        "516": 1480883051000,
+        "550": 1485312230000
+    },
+    "revision_to_hash": {
+        "2": "0d40271c703471778d08b6adc883d4b4ef026bca",
+        "3": "f64d35cae329862d668debf0d398e1ec58a0fe1f",
+        "26": "df534a551e02dfdd2add489ac2366a1f46accb6d",
+        "309": "b1c88d76438047bef5da96b9fd292f3709231e18",
+        "432": "7ba4da2c7d4320c71df9b0e68f1a647af378fccf",
+        "433": "75214fb3af37dba8ad83028241d6e98763a9fe98",
+        "434": "b381b12cf1a6c979ad036e482962f5c5d85fb67e",
+        "436": "99a2c52dbee4caf889a8b9ae30f0bf3aa81652fb",
+        "458": "3959d02bc8a25c56cd1509f89f1a933421349e76",
+        "474": "0e457d16340ea8c6e07b019a4ec1cecd68b1099d",
+        "475": "41b5da1b87f063254c4714897e3fa4bbaf2b9dc3",
+        "507": "b68e1e87cc8404e8e13f1639f0edee0a042c2094",
+        "516": "9d590f494984f2b4783b203ec83054e129e1177a",
+        "550": "e9a66846e02dabb43c9cb0e3502553999c95657b"
+    },
+    "show_commit_url": "#",
+    "tags": {
+        "v0.0.1": 2,
+        "v0.0.10": 474,
+        "v0.0.11": 475,
+        "v0.0.12": 507,
+        "v0.0.13": 516,
+        "v0.0.2": 3,
+        "v0.0.3": 26,
+        "v0.0.4": 309,
+        "v0.0.5": 432,
+        "v0.0.6": 433,
+        "v0.0.7": 434,
+        "v0.0.8": 436,
+        "v0.0.9": 458,
+        "v0.1.0": 550
+    }
+}

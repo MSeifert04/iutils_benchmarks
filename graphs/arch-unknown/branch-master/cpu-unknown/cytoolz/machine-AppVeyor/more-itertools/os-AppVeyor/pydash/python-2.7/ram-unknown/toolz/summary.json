@@ -1,0 +1,3232 @@
+[
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.006211762000000001,
+        "name": "accumulate.X.time_add",
+        "pretty_name": "accumulate.X.time_add('iteration_utilities.accumulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "accumulate.X.time_add",
+        "pretty_name": "accumulate.X.time_add('itertools.accumulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.014134652000000001,
+        "name": "accumulate.X.time_add",
+        "pretty_name": "accumulate.X.time_add('toolz.accumulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.008783654,
+        "name": "accumulate.X.time_add",
+        "pretty_name": "accumulate.X.time_add('cytoolz.accumulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.014447167,
+        "name": "accumulate.X.time_add",
+        "pretty_name": "accumulate.X.time_add('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.004670179,
+        "name": "accumulate.X.time_add_consume",
+        "pretty_name": "accumulate.X.time_add_consume('iteration_utilities.accumulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "accumulate.X.time_add_consume",
+        "pretty_name": "accumulate.X.time_add_consume('itertools.accumulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.013151086000000001,
+        "name": "accumulate.X.time_add_consume",
+        "pretty_name": "accumulate.X.time_add_consume('toolz.accumulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.007102261999999999,
+        "name": "accumulate.X.time_add_consume",
+        "pretty_name": "accumulate.X.time_add_consume('cytoolz.accumulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.012560389,
+        "name": "accumulate.X.time_add_consume",
+        "pretty_name": "accumulate.X.time_add_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.004906428999999999,
+        "name": "accumulate.X.time_noargs",
+        "pretty_name": "accumulate.X.time_noargs('iteration_utilities.accumulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "accumulate.X.time_noargs",
+        "pretty_name": "accumulate.X.time_noargs('itertools.accumulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "accumulate.X.time_noargs",
+        "pretty_name": "accumulate.X.time_noargs('toolz.accumulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "accumulate.X.time_noargs",
+        "pretty_name": "accumulate.X.time_noargs('cytoolz.accumulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.014839135000000003,
+        "name": "accumulate.X.time_noargs",
+        "pretty_name": "accumulate.X.time_noargs('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0033461589999999996,
+        "name": "accumulate.X.time_noargs_consume",
+        "pretty_name": "accumulate.X.time_noargs_consume('iteration_utilities.accumulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "accumulate.X.time_noargs_consume",
+        "pretty_name": "accumulate.X.time_noargs_consume('itertools.accumulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "accumulate.X.time_noargs_consume",
+        "pretty_name": "accumulate.X.time_noargs_consume('toolz.accumulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "accumulate.X.time_noargs_consume",
+        "pretty_name": "accumulate.X.time_noargs_consume('cytoolz.accumulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.012971249,
+        "name": "accumulate.X.time_noargs_consume",
+        "pretty_name": "accumulate.X.time_noargs_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.004893228,
+        "name": "all_distinct.X.time_noargs",
+        "pretty_name": "all_distinct.X.time_noargs('iteration_utilities.all_distinct')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.004681843999999999,
+        "name": "all_distinct.X.time_noargs",
+        "pretty_name": "all_distinct.X.time_noargs('toolz.is_distinct')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.00470129,
+        "name": "all_distinct.X.time_noargs",
+        "pretty_name": "all_distinct.X.time_noargs('cytoolz.is_distinct')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.000291246,
+        "name": "all_distinct.X.time_noargs_notdistinct",
+        "pretty_name": "all_distinct.X.time_noargs_notdistinct('iteration_utilities.all_distinct')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0020158929999999995,
+        "name": "all_distinct.X.time_noargs_notdistinct",
+        "pretty_name": "all_distinct.X.time_noargs_notdistinct('toolz.is_distinct')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0019491839999999994,
+        "name": "all_distinct.X.time_noargs_notdistinct",
+        "pretty_name": "all_distinct.X.time_noargs_notdistinct('cytoolz.is_distinct')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0005368268000000001,
+        "name": "all_equal.X.time_noargs",
+        "pretty_name": "all_equal.X.time_noargs('iteration_utilities.all_equal')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0008478858,
+        "name": "all_equal.X.time_noargs",
+        "pretty_name": "all_equal.X.time_noargs('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.004590306,
+        "name": "all_isinstance.X.time_noargs",
+        "pretty_name": "all_isinstance.X.time_noargs('iteration_utilities.all_isinstance')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.01139746,
+        "name": "all_isinstance.X.time_noargs",
+        "pretty_name": "all_isinstance.X.time_noargs('old_1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.002019886,
+        "name": "all_monotone.X.time_noargs",
+        "pretty_name": "all_monotone.X.time_noargs('iteration_utilities.all_monotone')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.00017961816000000003,
+        "name": "applyfunc.X.time_retTrue",
+        "pretty_name": "applyfunc.X.time_retTrue('iteration_utilities.applyfunc')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0011132698,
+        "name": "applyfunc.X.time_retTrue",
+        "pretty_name": "applyfunc.X.time_retTrue('toolz.iterate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.00046145019999999993,
+        "name": "applyfunc.X.time_retTrue",
+        "pretty_name": "applyfunc.X.time_retTrue('cytoolz.iterate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0011019552000000005,
+        "name": "applyfunc.X.time_retTrue",
+        "pretty_name": "applyfunc.X.time_retTrue('more-itertools.iterate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0010645074,
+        "name": "applyfunc.X.time_retTrue",
+        "pretty_name": "applyfunc.X.time_retTrue('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.00014583057,
+        "name": "applyfunc.X.time_retTrue_consume",
+        "pretty_name": "applyfunc.X.time_retTrue_consume('iteration_utilities.applyfunc')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0009996139999999998,
+        "name": "applyfunc.X.time_retTrue_consume",
+        "pretty_name": "applyfunc.X.time_retTrue_consume('toolz.iterate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0003888154,
+        "name": "applyfunc.X.time_retTrue_consume",
+        "pretty_name": "applyfunc.X.time_retTrue_consume('cytoolz.iterate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0010045095000000002,
+        "name": "applyfunc.X.time_retTrue_consume",
+        "pretty_name": "applyfunc.X.time_retTrue_consume('more-itertools.iterate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0010132844999999999,
+        "name": "applyfunc.X.time_retTrue_consume",
+        "pretty_name": "applyfunc.X.time_retTrue_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0019393074999999999,
+        "name": "argmax.X.time_key",
+        "pretty_name": "argmax.X.time_key('iteration_utilities.argmax')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0010079459000000002,
+        "name": "argmax.X.time_noargs",
+        "pretty_name": "argmax.X.time_noargs('iteration_utilities.argmax')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.004334579,
+        "name": "clamp.X.time_large",
+        "pretty_name": "clamp.X.time_large('iteration_utilities.clamp')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.008256257,
+        "name": "clamp.X.time_large",
+        "pretty_name": "clamp.X.time_large('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.014764109000000001,
+        "name": "clamp.X.time_large",
+        "pretty_name": "clamp.X.time_large('old2')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003592474,
+        "name": "clamp.X.time_large_consume",
+        "pretty_name": "clamp.X.time_large_consume('iteration_utilities.clamp')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.007644738,
+        "name": "clamp.X.time_large_consume",
+        "pretty_name": "clamp.X.time_large_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.015525577000000004,
+        "name": "clamp.X.time_large_consume",
+        "pretty_name": "clamp.X.time_large_consume('old2')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003354877,
+        "name": "clamp.X.time_small",
+        "pretty_name": "clamp.X.time_small('iteration_utilities.clamp')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0049609849999999985,
+        "name": "clamp.X.time_small",
+        "pretty_name": "clamp.X.time_small('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.013724636999999998,
+        "name": "clamp.X.time_small",
+        "pretty_name": "clamp.X.time_small('old2')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003493402,
+        "name": "clamp.X.time_small_consume",
+        "pretty_name": "clamp.X.time_small_consume('iteration_utilities.clamp')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0049101330000000006,
+        "name": "clamp.X.time_small_consume",
+        "pretty_name": "clamp.X.time_small_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.015396985,
+        "name": "clamp.X.time_small_consume",
+        "pretty_name": "clamp.X.time_small_consume('old2')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0010008159999999999,
+        "name": "count_items.X.time_equals",
+        "pretty_name": "count_items.X.time_equals('iteration_utilities.count_items')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "count_items.X.time_equals",
+        "pretty_name": "count_items.X.time_equals('more-itertools.ilen')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.000427877,
+        "name": "count_items.X.time_noargs",
+        "pretty_name": "count_items.X.time_noargs('iteration_utilities.count_items')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003865728,
+        "name": "count_items.X.time_noargs",
+        "pretty_name": "count_items.X.time_noargs('more-itertools.ilen')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0032138029999999995,
+        "name": "count_items.X.time_predicate",
+        "pretty_name": "count_items.X.time_predicate('iteration_utilities.count_items')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "count_items.X.time_predicate",
+        "pretty_name": "count_items.X.time_predicate('more-itertools.ilen')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.005387097,
+        "name": "duplicates.X.time_keyabs",
+        "pretty_name": "duplicates.X.time_keyabs('iteration_utilities.duplicates')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.00408008,
+        "name": "duplicates.X.time_keyabs_consume",
+        "pretty_name": "duplicates.X.time_keyabs_consume('iteration_utilities.duplicates')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.005072417999999999,
+        "name": "duplicates.X.time_noargs",
+        "pretty_name": "duplicates.X.time_noargs('iteration_utilities.duplicates')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003810631,
+        "name": "duplicates.X.time_noargs_consume",
+        "pretty_name": "duplicates.X.time_noargs_consume('iteration_utilities.duplicates')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.00014337894,
+        "name": "flatten.X.time_depth1",
+        "pretty_name": "flatten.X.time_depth1('iteration_utilities.deepflatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.00012394701,
+        "name": "flatten.X.time_depth1",
+        "pretty_name": "flatten.X.time_depth1('iteration_utilities.flatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "flatten.X.time_depth1",
+        "pretty_name": "flatten.X.time_depth1('pydash.flatten_deep')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.004233186,
+        "name": "flatten.X.time_depth1",
+        "pretty_name": "flatten.X.time_depth1('pydash.flatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.005891348000000001,
+        "name": "flatten.X.time_depth1",
+        "pretty_name": "flatten.X.time_depth1('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.016687030000000002,
+        "name": "flatten.X.time_depth1",
+        "pretty_name": "flatten.X.time_depth1('old2')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0014471845,
+        "name": "flatten.X.time_depth2",
+        "pretty_name": "flatten.X.time_depth2('iteration_utilities.deepflatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "flatten.X.time_depth2",
+        "pretty_name": "flatten.X.time_depth2('iteration_utilities.flatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "flatten.X.time_depth2",
+        "pretty_name": "flatten.X.time_depth2('pydash.flatten_deep')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "flatten.X.time_depth2",
+        "pretty_name": "flatten.X.time_depth2('pydash.flatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.15781420000000007,
+        "name": "flatten.X.time_depth2",
+        "pretty_name": "flatten.X.time_depth2('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.19156484999999995,
+        "name": "flatten.X.time_depth2",
+        "pretty_name": "flatten.X.time_depth2('old2')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.00026499980000000003,
+        "name": "flatten.X.time_ignores",
+        "pretty_name": "flatten.X.time_ignores('iteration_utilities.deepflatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "flatten.X.time_ignores",
+        "pretty_name": "flatten.X.time_ignores('iteration_utilities.flatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "flatten.X.time_ignores",
+        "pretty_name": "flatten.X.time_ignores('pydash.flatten_deep')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "flatten.X.time_ignores",
+        "pretty_name": "flatten.X.time_ignores('pydash.flatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.17621291,
+        "name": "flatten.X.time_ignores",
+        "pretty_name": "flatten.X.time_ignores('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.013890596999999998,
+        "name": "flatten.X.time_ignores",
+        "pretty_name": "flatten.X.time_ignores('old2')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.03198302999999999,
+        "name": "flatten.X.time_noargs",
+        "pretty_name": "flatten.X.time_noargs('iteration_utilities.deepflatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "flatten.X.time_noargs",
+        "pretty_name": "flatten.X.time_noargs('iteration_utilities.flatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.05628917000000001,
+        "name": "flatten.X.time_noargs",
+        "pretty_name": "flatten.X.time_noargs('pydash.flatten_deep')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "flatten.X.time_noargs",
+        "pretty_name": "flatten.X.time_noargs('pydash.flatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.15213043999999998,
+        "name": "flatten.X.time_noargs",
+        "pretty_name": "flatten.X.time_noargs('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.19047884999999995,
+        "name": "flatten.X.time_noargs",
+        "pretty_name": "flatten.X.time_noargs('old2')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.02941374,
+        "name": "flatten.X.time_noargs_consume",
+        "pretty_name": "flatten.X.time_noargs_consume('iteration_utilities.deepflatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "flatten.X.time_noargs_consume",
+        "pretty_name": "flatten.X.time_noargs_consume('iteration_utilities.flatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "flatten.X.time_noargs_consume",
+        "pretty_name": "flatten.X.time_noargs_consume('pydash.flatten_deep')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "flatten.X.time_noargs_consume",
+        "pretty_name": "flatten.X.time_noargs_consume('pydash.flatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.15362408,
+        "name": "flatten.X.time_noargs_consume",
+        "pretty_name": "flatten.X.time_noargs_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.19188442000000006,
+        "name": "flatten.X.time_noargs_consume",
+        "pretty_name": "flatten.X.time_noargs_consume('old2')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0009719543000000001,
+        "name": "flatten.X.time_types",
+        "pretty_name": "flatten.X.time_types('iteration_utilities.deepflatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "flatten.X.time_types",
+        "pretty_name": "flatten.X.time_types('iteration_utilities.flatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "flatten.X.time_types",
+        "pretty_name": "flatten.X.time_types('pydash.flatten_deep')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "flatten.X.time_types",
+        "pretty_name": "flatten.X.time_types('pydash.flatten')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0035452930000000006,
+        "name": "flatten.X.time_types",
+        "pretty_name": "flatten.X.time_types('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003280147000000001,
+        "name": "flatten.X.time_types",
+        "pretty_name": "flatten.X.time_types('old2')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0006731342,
+        "name": "groupedby.X.time_keyEven",
+        "pretty_name": "groupedby.X.time_keyEven('iteration_utilities.groupedby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0011697306999999997,
+        "name": "groupedby.X.time_keyEven",
+        "pretty_name": "groupedby.X.time_keyEven('toolz.groupby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.000668255,
+        "name": "groupedby.X.time_keyEven",
+        "pretty_name": "groupedby.X.time_keyEven('cytoolz.groupby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "groupedby.X.time_keyEven",
+        "pretty_name": "groupedby.X.time_keyEven('toolz.reduceby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "groupedby.X.time_keyEven",
+        "pretty_name": "groupedby.X.time_keyEven('cytoolz.reduceby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0014400817000000002,
+        "name": "groupedby.X.time_keyEven",
+        "pretty_name": "groupedby.X.time_keyEven('alt1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0010691966,
+        "name": "groupedby.X.time_keyEven_reduceAdd",
+        "pretty_name": "groupedby.X.time_keyEven_reduceAdd('iteration_utilities.groupedby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "groupedby.X.time_keyEven_reduceAdd",
+        "pretty_name": "groupedby.X.time_keyEven_reduceAdd('toolz.groupby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "groupedby.X.time_keyEven_reduceAdd",
+        "pretty_name": "groupedby.X.time_keyEven_reduceAdd('cytoolz.groupby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.002289962,
+        "name": "groupedby.X.time_keyEven_reduceAdd",
+        "pretty_name": "groupedby.X.time_keyEven_reduceAdd('toolz.reduceby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0013300003999999995,
+        "name": "groupedby.X.time_keyEven_reduceAdd",
+        "pretty_name": "groupedby.X.time_keyEven_reduceAdd('cytoolz.reduceby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "groupedby.X.time_keyEven_reduceAdd",
+        "pretty_name": "groupedby.X.time_keyEven_reduceAdd('alt1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0015337289000000001,
+        "name": "groupedby.X.time_keyMod300",
+        "pretty_name": "groupedby.X.time_keyMod300('iteration_utilities.groupedby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.002249224,
+        "name": "groupedby.X.time_keyMod300",
+        "pretty_name": "groupedby.X.time_keyMod300('toolz.groupby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0015172327999999997,
+        "name": "groupedby.X.time_keyMod300",
+        "pretty_name": "groupedby.X.time_keyMod300('cytoolz.groupby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "groupedby.X.time_keyMod300",
+        "pretty_name": "groupedby.X.time_keyMod300('toolz.reduceby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "groupedby.X.time_keyMod300",
+        "pretty_name": "groupedby.X.time_keyMod300('cytoolz.reduceby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0023988560000000004,
+        "name": "groupedby.X.time_keyMod300",
+        "pretty_name": "groupedby.X.time_keyMod300('alt1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0017450097,
+        "name": "groupedby.X.time_keyMod300_reduceAdd",
+        "pretty_name": "groupedby.X.time_keyMod300_reduceAdd('iteration_utilities.groupedby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "groupedby.X.time_keyMod300_reduceAdd",
+        "pretty_name": "groupedby.X.time_keyMod300_reduceAdd('toolz.groupby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "groupedby.X.time_keyMod300_reduceAdd",
+        "pretty_name": "groupedby.X.time_keyMod300_reduceAdd('cytoolz.groupby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003332244,
+        "name": "groupedby.X.time_keyMod300_reduceAdd",
+        "pretty_name": "groupedby.X.time_keyMod300_reduceAdd('toolz.reduceby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.002098256,
+        "name": "groupedby.X.time_keyMod300_reduceAdd",
+        "pretty_name": "groupedby.X.time_keyMod300_reduceAdd('cytoolz.reduceby')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "groupedby.X.time_keyMod300_reduceAdd",
+        "pretty_name": "groupedby.X.time_keyMod300_reduceAdd('alt1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003452999000000001,
+        "name": "grouper.X.time_n2",
+        "pretty_name": "grouper.X.time_n2('iteration_utilities.grouper')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003657902,
+        "name": "grouper.X.time_n2",
+        "pretty_name": "grouper.X.time_n2('toolz.partition')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003988333999999999,
+        "name": "grouper.X.time_n2",
+        "pretty_name": "grouper.X.time_n2('cytoolz.partition')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0037571749999999993,
+        "name": "grouper.X.time_n2",
+        "pretty_name": "grouper.X.time_n2('toolz.partition_all')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0039886470000000005,
+        "name": "grouper.X.time_n2",
+        "pretty_name": "grouper.X.time_n2('cytoolz.partition_all')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.013688814999999998,
+        "name": "grouper.X.time_n2",
+        "pretty_name": "grouper.X.time_n2('pydash.chunk')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 6,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.05486824999999999,
+        "name": "grouper.X.time_n2",
+        "pretty_name": "grouper.X.time_n2('more-itertools.chunked')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 7,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.039857619999999996,
+        "name": "grouper.X.time_n2",
+        "pretty_name": "grouper.X.time_n2('nx_itertools.chunk')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 8,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003351993999999999,
+        "name": "grouper.X.time_n2",
+        "pretty_name": "grouper.X.time_n2('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0006307995999999998,
+        "name": "grouper.X.time_n2_consume",
+        "pretty_name": "grouper.X.time_n2_consume('iteration_utilities.grouper')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0006100620999999999,
+        "name": "grouper.X.time_n2_consume",
+        "pretty_name": "grouper.X.time_n2_consume('toolz.partition')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0018175491,
+        "name": "grouper.X.time_n2_consume",
+        "pretty_name": "grouper.X.time_n2_consume('cytoolz.partition')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0006117181999999999,
+        "name": "grouper.X.time_n2_consume",
+        "pretty_name": "grouper.X.time_n2_consume('toolz.partition_all')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0018191972,
+        "name": "grouper.X.time_n2_consume",
+        "pretty_name": "grouper.X.time_n2_consume('cytoolz.partition_all')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "grouper.X.time_n2_consume",
+        "pretty_name": "grouper.X.time_n2_consume('pydash.chunk')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 6,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.049468580000000005,
+        "name": "grouper.X.time_n2_consume",
+        "pretty_name": "grouper.X.time_n2_consume('more-itertools.chunked')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 7,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.037298109999999995,
+        "name": "grouper.X.time_n2_consume",
+        "pretty_name": "grouper.X.time_n2_consume('nx_itertools.chunk')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 8,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0006875153,
+        "name": "grouper.X.time_n2_consume",
+        "pretty_name": "grouper.X.time_n2_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0007528652,
+        "name": "grouper.X.time_n50",
+        "pretty_name": "grouper.X.time_n50('iteration_utilities.grouper')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0009190388,
+        "name": "grouper.X.time_n50",
+        "pretty_name": "grouper.X.time_n50('toolz.partition')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0011110840999999998,
+        "name": "grouper.X.time_n50",
+        "pretty_name": "grouper.X.time_n50('cytoolz.partition')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0009350141000000001,
+        "name": "grouper.X.time_n50",
+        "pretty_name": "grouper.X.time_n50('toolz.partition_all')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0010982541,
+        "name": "grouper.X.time_n50",
+        "pretty_name": "grouper.X.time_n50('cytoolz.partition_all')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0009768398,
+        "name": "grouper.X.time_n50",
+        "pretty_name": "grouper.X.time_n50('pydash.chunk')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 6,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.004082472,
+        "name": "grouper.X.time_n50",
+        "pretty_name": "grouper.X.time_n50('more-itertools.chunked')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 7,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.00348939,
+        "name": "grouper.X.time_n50",
+        "pretty_name": "grouper.X.time_n50('nx_itertools.chunk')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 8,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0009469345000000002,
+        "name": "grouper.X.time_n50",
+        "pretty_name": "grouper.X.time_n50('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0004205741,
+        "name": "grouper.X.time_n50_consume",
+        "pretty_name": "grouper.X.time_n50_consume('iteration_utilities.grouper')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.00045391999999999996,
+        "name": "grouper.X.time_n50_consume",
+        "pretty_name": "grouper.X.time_n50_consume('toolz.partition')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0007241521000000002,
+        "name": "grouper.X.time_n50_consume",
+        "pretty_name": "grouper.X.time_n50_consume('cytoolz.partition')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.00047675999999999985,
+        "name": "grouper.X.time_n50_consume",
+        "pretty_name": "grouper.X.time_n50_consume('toolz.partition_all')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0007339216,
+        "name": "grouper.X.time_n50_consume",
+        "pretty_name": "grouper.X.time_n50_consume('cytoolz.partition_all')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "grouper.X.time_n50_consume",
+        "pretty_name": "grouper.X.time_n50_consume('pydash.chunk')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 6,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003855564,
+        "name": "grouper.X.time_n50_consume",
+        "pretty_name": "grouper.X.time_n50_consume('more-itertools.chunked')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 7,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0033115079999999995,
+        "name": "grouper.X.time_n50_consume",
+        "pretty_name": "grouper.X.time_n50_consume('nx_itertools.chunk')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 8,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.00048153860000000004,
+        "name": "grouper.X.time_n50_consume",
+        "pretty_name": "grouper.X.time_n50_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.004635209,
+        "name": "intersperse.X.time_with_x",
+        "pretty_name": "intersperse.X.time_with_x('iteration_utilities.intersperse')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.009697404,
+        "name": "intersperse.X.time_with_x",
+        "pretty_name": "intersperse.X.time_with_x('toolz.interpose')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.005288626999999999,
+        "name": "intersperse.X.time_with_x",
+        "pretty_name": "intersperse.X.time_with_x('cytoolz.interpose')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.012554991,
+        "name": "intersperse.X.time_with_x",
+        "pretty_name": "intersperse.X.time_with_x('pydash.intersperse')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0008998017,
+        "name": "intersperse.X.time_with_x_consume",
+        "pretty_name": "intersperse.X.time_with_x_consume('iteration_utilities.intersperse')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0056474970000000005,
+        "name": "intersperse.X.time_with_x_consume",
+        "pretty_name": "intersperse.X.time_with_x_consume('toolz.interpose')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0012052864,
+        "name": "intersperse.X.time_with_x_consume",
+        "pretty_name": "intersperse.X.time_with_x_consume('cytoolz.interpose')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "intersperse.X.time_with_x_consume",
+        "pretty_name": "intersperse.X.time_with_x_consume('pydash.intersperse')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0018143383,
+        "name": "merge.X.time_fewiterableslong",
+        "pretty_name": "merge.X.time_fewiterableslong('iteration_utilities.merge')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0014299516,
+        "name": "merge.X.time_fewiterableslong",
+        "pretty_name": "merge.X.time_fewiterableslong('sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.010184977000000001,
+        "name": "merge.X.time_fewiterableslong",
+        "pretty_name": "merge.X.time_fewiterableslong('heapq.merge')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0034255729999999995,
+        "name": "merge.X.time_fewiterableslong",
+        "pretty_name": "merge.X.time_fewiterableslong('toolz.merge_sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0015906085,
+        "name": "merge.X.time_fewiterableslong",
+        "pretty_name": "merge.X.time_fewiterableslong('cytoolz.merge_sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.010320223,
+        "name": "merge.X.time_fewiterableslong",
+        "pretty_name": "merge.X.time_fewiterableslong('more-itertools.collate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 6,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.014058592000000002,
+        "name": "merge.X.time_fewiterableslong",
+        "pretty_name": "merge.X.time_fewiterableslong('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0017387405999999999,
+        "name": "merge.X.time_fewiterableslong_consume",
+        "pretty_name": "merge.X.time_fewiterableslong_consume('iteration_utilities.merge')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "merge.X.time_fewiterableslong_consume",
+        "pretty_name": "merge.X.time_fewiterableslong_consume('sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.010020848999999998,
+        "name": "merge.X.time_fewiterableslong_consume",
+        "pretty_name": "merge.X.time_fewiterableslong_consume('heapq.merge')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003303972,
+        "name": "merge.X.time_fewiterableslong_consume",
+        "pretty_name": "merge.X.time_fewiterableslong_consume('toolz.merge_sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0015196397,
+        "name": "merge.X.time_fewiterableslong_consume",
+        "pretty_name": "merge.X.time_fewiterableslong_consume('cytoolz.merge_sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "merge.X.time_fewiterableslong_consume",
+        "pretty_name": "merge.X.time_fewiterableslong_consume('more-itertools.collate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 6,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.013938965000000003,
+        "name": "merge.X.time_fewiterableslong_consume",
+        "pretty_name": "merge.X.time_fewiterableslong_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.005162924000000001,
+        "name": "merge.X.time_manyiterablesshort",
+        "pretty_name": "merge.X.time_manyiterablesshort('iteration_utilities.merge')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.002432394,
+        "name": "merge.X.time_manyiterablesshort",
+        "pretty_name": "merge.X.time_manyiterablesshort('sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.013038178000000001,
+        "name": "merge.X.time_manyiterablesshort",
+        "pretty_name": "merge.X.time_manyiterablesshort('heapq.merge')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.007942251,
+        "name": "merge.X.time_manyiterablesshort",
+        "pretty_name": "merge.X.time_manyiterablesshort('toolz.merge_sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003651894,
+        "name": "merge.X.time_manyiterablesshort",
+        "pretty_name": "merge.X.time_manyiterablesshort('cytoolz.merge_sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.013035498999999997,
+        "name": "merge.X.time_manyiterablesshort",
+        "pretty_name": "merge.X.time_manyiterablesshort('more-itertools.collate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 6,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.13613756000000002,
+        "name": "merge.X.time_manyiterablesshort",
+        "pretty_name": "merge.X.time_manyiterablesshort('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0051482640000000005,
+        "name": "merge.X.time_manyiterablesshort_consume",
+        "pretty_name": "merge.X.time_manyiterablesshort_consume('iteration_utilities.merge')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "merge.X.time_manyiterablesshort_consume",
+        "pretty_name": "merge.X.time_manyiterablesshort_consume('sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.012945281,
+        "name": "merge.X.time_manyiterablesshort_consume",
+        "pretty_name": "merge.X.time_manyiterablesshort_consume('heapq.merge')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.008024042,
+        "name": "merge.X.time_manyiterablesshort_consume",
+        "pretty_name": "merge.X.time_manyiterablesshort_consume('toolz.merge_sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003531442,
+        "name": "merge.X.time_manyiterablesshort_consume",
+        "pretty_name": "merge.X.time_manyiterablesshort_consume('cytoolz.merge_sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "merge.X.time_manyiterablesshort_consume",
+        "pretty_name": "merge.X.time_manyiterablesshort_consume('more-itertools.collate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 6,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.13657843000000006,
+        "name": "merge.X.time_manyiterablesshort_consume",
+        "pretty_name": "merge.X.time_manyiterablesshort_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0012487108000000002,
+        "name": "merge.X.time_manyiterablesshort_fewdups",
+        "pretty_name": "merge.X.time_manyiterablesshort_fewdups('iteration_utilities.merge')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0011028244,
+        "name": "merge.X.time_manyiterablesshort_fewdups",
+        "pretty_name": "merge.X.time_manyiterablesshort_fewdups('sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.014922405999999997,
+        "name": "merge.X.time_manyiterablesshort_fewdups",
+        "pretty_name": "merge.X.time_manyiterablesshort_fewdups('heapq.merge')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0053868399999999995,
+        "name": "merge.X.time_manyiterablesshort_fewdups",
+        "pretty_name": "merge.X.time_manyiterablesshort_fewdups('toolz.merge_sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.002484284,
+        "name": "merge.X.time_manyiterablesshort_fewdups",
+        "pretty_name": "merge.X.time_manyiterablesshort_fewdups('cytoolz.merge_sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.014538636,
+        "name": "merge.X.time_manyiterablesshort_fewdups",
+        "pretty_name": "merge.X.time_manyiterablesshort_fewdups('more-itertools.collate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 6,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.11756908999999997,
+        "name": "merge.X.time_manyiterablesshort_fewdups",
+        "pretty_name": "merge.X.time_manyiterablesshort_fewdups('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0011967472,
+        "name": "merge.X.time_manyiterablesshort_fewdups_consume",
+        "pretty_name": "merge.X.time_manyiterablesshort_fewdups_consume('iteration_utilities.merge')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "merge.X.time_manyiterablesshort_fewdups_consume",
+        "pretty_name": "merge.X.time_manyiterablesshort_fewdups_consume('sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.014601697000000002,
+        "name": "merge.X.time_manyiterablesshort_fewdups_consume",
+        "pretty_name": "merge.X.time_manyiterablesshort_fewdups_consume('heapq.merge')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.005336667000000001,
+        "name": "merge.X.time_manyiterablesshort_fewdups_consume",
+        "pretty_name": "merge.X.time_manyiterablesshort_fewdups_consume('toolz.merge_sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0024498509999999994,
+        "name": "merge.X.time_manyiterablesshort_fewdups_consume",
+        "pretty_name": "merge.X.time_manyiterablesshort_fewdups_consume('cytoolz.merge_sorted')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "merge.X.time_manyiterablesshort_fewdups_consume",
+        "pretty_name": "merge.X.time_manyiterablesshort_fewdups_consume('more-itertools.collate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 6,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.11785638000000001,
+        "name": "merge.X.time_manyiterablesshort_fewdups_consume",
+        "pretty_name": "merge.X.time_manyiterablesshort_fewdups_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.00397175,
+        "name": "minmax.X.time_customclass",
+        "pretty_name": "minmax.X.time_customclass('iteration_utilities.minmax')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.005148786,
+        "name": "minmax.X.time_customclass",
+        "pretty_name": "minmax.X.time_customclass('min_max')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.004441794999999999,
+        "name": "minmax.X.time_customclass",
+        "pretty_name": "minmax.X.time_customclass('alt1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.004534218,
+        "name": "minmax.X.time_customclass",
+        "pretty_name": "minmax.X.time_customclass('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0025080779999999995,
+        "name": "minmax.X.time_key",
+        "pretty_name": "minmax.X.time_key('iteration_utilities.minmax')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.005934719,
+        "name": "minmax.X.time_key",
+        "pretty_name": "minmax.X.time_key('min_max')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "minmax.X.time_key",
+        "pretty_name": "minmax.X.time_key('alt1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0044460359999999996,
+        "name": "minmax.X.time_key",
+        "pretty_name": "minmax.X.time_key('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0016030249,
+        "name": "minmax.X.time_noargs",
+        "pretty_name": "minmax.X.time_noargs('iteration_utilities.minmax')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0018984439000000002,
+        "name": "minmax.X.time_noargs",
+        "pretty_name": "minmax.X.time_noargs('min_max')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0023056739999999997,
+        "name": "minmax.X.time_noargs",
+        "pretty_name": "minmax.X.time_noargs('alt1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.002211708,
+        "name": "minmax.X.time_noargs",
+        "pretty_name": "minmax.X.time_noargs('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0011630842999999999,
+        "name": "partition.X.time_noargs",
+        "pretty_name": "partition.X.time_noargs('iteration_utilities.partition')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0030176779999999993,
+        "name": "partition.X.time_noargs",
+        "pretty_name": "partition.X.time_noargs('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0027044139999999996,
+        "name": "partition.X.time_pred",
+        "pretty_name": "partition.X.time_pred('iteration_utilities.partition')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.004931842,
+        "name": "partition.X.time_pred",
+        "pretty_name": "partition.X.time_pred('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0006689033999999998,
+        "name": "repeatfunc.X.time_retTrue",
+        "pretty_name": "repeatfunc.X.time_retTrue('iteration_utilities.repeatfunc')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0005130032,
+        "name": "repeatfunc.X.time_retTrue_consume",
+        "pretty_name": "repeatfunc.X.time_retTrue_consume('iteration_utilities.repeatfunc')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0003350812,
+        "name": "roundrobin.X.time_fewiterableslong",
+        "pretty_name": "roundrobin.X.time_fewiterableslong('iteration_utilities.roundrobin')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0019255287000000002,
+        "name": "roundrobin.X.time_fewiterableslong",
+        "pretty_name": "roundrobin.X.time_fewiterableslong('toolz.interleave')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0008786661999999998,
+        "name": "roundrobin.X.time_fewiterableslong",
+        "pretty_name": "roundrobin.X.time_fewiterableslong('cytoolz.interleave')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003772468999999999,
+        "name": "roundrobin.X.time_fewiterableslong",
+        "pretty_name": "roundrobin.X.time_fewiterableslong('pydash.interleave')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0013720657,
+        "name": "roundrobin.X.time_fewiterableslong",
+        "pretty_name": "roundrobin.X.time_fewiterableslong('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0002845253,
+        "name": "roundrobin.X.time_fewiterableslong_consume",
+        "pretty_name": "roundrobin.X.time_fewiterableslong_consume('iteration_utilities.roundrobin')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0017853012,
+        "name": "roundrobin.X.time_fewiterableslong_consume",
+        "pretty_name": "roundrobin.X.time_fewiterableslong_consume('toolz.interleave')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0008152891,
+        "name": "roundrobin.X.time_fewiterableslong_consume",
+        "pretty_name": "roundrobin.X.time_fewiterableslong_consume('cytoolz.interleave')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "roundrobin.X.time_fewiterableslong_consume",
+        "pretty_name": "roundrobin.X.time_fewiterableslong_consume('pydash.interleave')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0012639255000000001,
+        "name": "roundrobin.X.time_fewiterableslong_consume",
+        "pretty_name": "roundrobin.X.time_fewiterableslong_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.00030972580000000006,
+        "name": "roundrobin.X.time_manyiterablesshort",
+        "pretty_name": "roundrobin.X.time_manyiterablesshort('iteration_utilities.roundrobin')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.017684237999999998,
+        "name": "roundrobin.X.time_manyiterablesshort",
+        "pretty_name": "roundrobin.X.time_manyiterablesshort('toolz.interleave')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0004989357,
+        "name": "roundrobin.X.time_manyiterablesshort",
+        "pretty_name": "roundrobin.X.time_manyiterablesshort('cytoolz.interleave')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.002886778,
+        "name": "roundrobin.X.time_manyiterablesshort",
+        "pretty_name": "roundrobin.X.time_manyiterablesshort('pydash.interleave')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.007106718,
+        "name": "roundrobin.X.time_manyiterablesshort",
+        "pretty_name": "roundrobin.X.time_manyiterablesshort('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.00026450660000000006,
+        "name": "roundrobin.X.time_manyiterablesshort_consume",
+        "pretty_name": "roundrobin.X.time_manyiterablesshort_consume('iteration_utilities.roundrobin')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.017487079,
+        "name": "roundrobin.X.time_manyiterablesshort_consume",
+        "pretty_name": "roundrobin.X.time_manyiterablesshort_consume('toolz.interleave')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0004843431,
+        "name": "roundrobin.X.time_manyiterablesshort_consume",
+        "pretty_name": "roundrobin.X.time_manyiterablesshort_consume('cytoolz.interleave')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "roundrobin.X.time_manyiterablesshort_consume",
+        "pretty_name": "roundrobin.X.time_manyiterablesshort_consume('pydash.interleave')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.007010443,
+        "name": "roundrobin.X.time_manyiterablesshort_consume",
+        "pretty_name": "roundrobin.X.time_manyiterablesshort_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003892055999999999,
+        "name": "split.X.time_element",
+        "pretty_name": "split.X.time_element('iteration_utilities.split')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0037224059999999993,
+        "name": "split.X.time_element_consume",
+        "pretty_name": "split.X.time_element_consume('iteration_utilities.split')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.005672899,
+        "name": "split.X.time_key",
+        "pretty_name": "split.X.time_key('iteration_utilities.split')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.005489962000000002,
+        "name": "split.X.time_key_consume",
+        "pretty_name": "split.X.time_key_consume('iteration_utilities.split')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.007733000000000001,
+        "name": "successive.X.time_n2",
+        "pretty_name": "successive.X.time_n2('iteration_utilities.successive')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.009017394999999997,
+        "name": "successive.X.time_n2",
+        "pretty_name": "successive.X.time_n2('toolz.sliding_window')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.008752515,
+        "name": "successive.X.time_n2",
+        "pretty_name": "successive.X.time_n2('cytoolz.sliding_window')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.008859012000000001,
+        "name": "successive.X.time_n2",
+        "pretty_name": "successive.X.time_n2('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.013422172999999997,
+        "name": "successive.X.time_n2",
+        "pretty_name": "successive.X.time_n2('alt1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.009178423,
+        "name": "successive.X.time_n2",
+        "pretty_name": "successive.X.time_n2('alt2')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0018579831999999995,
+        "name": "successive.X.time_n2_consume",
+        "pretty_name": "successive.X.time_n2_consume('iteration_utilities.successive')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.002552713,
+        "name": "successive.X.time_n2_consume",
+        "pretty_name": "successive.X.time_n2_consume('toolz.sliding_window')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003072199,
+        "name": "successive.X.time_n2_consume",
+        "pretty_name": "successive.X.time_n2_consume('cytoolz.sliding_window')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0024139789999999993,
+        "name": "successive.X.time_n2_consume",
+        "pretty_name": "successive.X.time_n2_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.006917277,
+        "name": "successive.X.time_n2_consume",
+        "pretty_name": "successive.X.time_n2_consume('alt1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0024091739999999996,
+        "name": "successive.X.time_n2_consume",
+        "pretty_name": "successive.X.time_n2_consume('alt2')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.04694128999999998,
+        "name": "successive.X.time_n50",
+        "pretty_name": "successive.X.time_n50('iteration_utilities.successive')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.07263158,
+        "name": "successive.X.time_n50",
+        "pretty_name": "successive.X.time_n50('toolz.sliding_window')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.06035484,
+        "name": "successive.X.time_n50",
+        "pretty_name": "successive.X.time_n50('cytoolz.sliding_window')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.07237,
+        "name": "successive.X.time_n50",
+        "pretty_name": "successive.X.time_n50('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "successive.X.time_n50",
+        "pretty_name": "successive.X.time_n50('alt1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "successive.X.time_n50",
+        "pretty_name": "successive.X.time_n50('alt2')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0032303480000000005,
+        "name": "successive.X.time_n50_consume",
+        "pretty_name": "successive.X.time_n50_consume('iteration_utilities.successive')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.036446370000000006,
+        "name": "successive.X.time_n50_consume",
+        "pretty_name": "successive.X.time_n50_consume('toolz.sliding_window')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.032963549999999994,
+        "name": "successive.X.time_n50_consume",
+        "pretty_name": "successive.X.time_n50_consume('cytoolz.sliding_window')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.03728086,
+        "name": "successive.X.time_n50_consume",
+        "pretty_name": "successive.X.time_n50_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "successive.X.time_n50_consume",
+        "pretty_name": "successive.X.time_n50_consume('alt1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "successive.X.time_n50_consume",
+        "pretty_name": "successive.X.time_n50_consume('alt2')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.00033415779999999997,
+        "name": "tabulate.X.time_retTrue",
+        "pretty_name": "tabulate.X.time_retTrue('iteration_utilities.tabulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0002759031,
+        "name": "tabulate.X.time_retTrue_consume",
+        "pretty_name": "tabulate.X.time_retTrue_consume('iteration_utilities.tabulate')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.009169899000000002,
+        "name": "unique_everseen.X.time_key_square",
+        "pretty_name": "unique_everseen.X.time_key_square('iteration_utilities.unique_everseen')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.011750716999999999,
+        "name": "unique_everseen.X.time_key_square",
+        "pretty_name": "unique_everseen.X.time_key_square('toolz.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.007331464999999999,
+        "name": "unique_everseen.X.time_key_square",
+        "pretty_name": "unique_everseen.X.time_key_square('cytoolz.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "unique_everseen.X.time_key_square",
+        "pretty_name": "unique_everseen.X.time_key_square('pydash.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.011872157,
+        "name": "unique_everseen.X.time_key_square",
+        "pretty_name": "unique_everseen.X.time_key_square('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "unique_everseen.X.time_key_square",
+        "pretty_name": "unique_everseen.X.time_key_square('alt1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.008219246,
+        "name": "unique_everseen.X.time_key_square_consume",
+        "pretty_name": "unique_everseen.X.time_key_square_consume('iteration_utilities.unique_everseen')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.011523375000000002,
+        "name": "unique_everseen.X.time_key_square_consume",
+        "pretty_name": "unique_everseen.X.time_key_square_consume('toolz.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.007448727,
+        "name": "unique_everseen.X.time_key_square_consume",
+        "pretty_name": "unique_everseen.X.time_key_square_consume('cytoolz.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "unique_everseen.X.time_key_square_consume",
+        "pretty_name": "unique_everseen.X.time_key_square_consume('pydash.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.011734940999999999,
+        "name": "unique_everseen.X.time_key_square_consume",
+        "pretty_name": "unique_everseen.X.time_key_square_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "unique_everseen.X.time_key_square_consume",
+        "pretty_name": "unique_everseen.X.time_key_square_consume('alt1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.005836097,
+        "name": "unique_everseen.X.time_noargs_fewduplicates",
+        "pretty_name": "unique_everseen.X.time_noargs_fewduplicates('iteration_utilities.unique_everseen')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.008869687000000001,
+        "name": "unique_everseen.X.time_noargs_fewduplicates",
+        "pretty_name": "unique_everseen.X.time_noargs_fewduplicates('toolz.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.005798976,
+        "name": "unique_everseen.X.time_noargs_fewduplicates",
+        "pretty_name": "unique_everseen.X.time_noargs_fewduplicates('cytoolz.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 15.5188693,
+        "name": "unique_everseen.X.time_noargs_fewduplicates",
+        "pretty_name": "unique_everseen.X.time_noargs_fewduplicates('pydash.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.010068402999999998,
+        "name": "unique_everseen.X.time_noargs_fewduplicates",
+        "pretty_name": "unique_everseen.X.time_noargs_fewduplicates('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 6.052728000000002,
+        "name": "unique_everseen.X.time_noargs_fewduplicates",
+        "pretty_name": "unique_everseen.X.time_noargs_fewduplicates('alt1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.005468426000000001,
+        "name": "unique_everseen.X.time_noargs_fewduplicates_consume",
+        "pretty_name": "unique_everseen.X.time_noargs_fewduplicates_consume('iteration_utilities.unique_everseen')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.008755306000000003,
+        "name": "unique_everseen.X.time_noargs_fewduplicates_consume",
+        "pretty_name": "unique_everseen.X.time_noargs_fewduplicates_consume('toolz.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.005598268,
+        "name": "unique_everseen.X.time_noargs_fewduplicates_consume",
+        "pretty_name": "unique_everseen.X.time_noargs_fewduplicates_consume('cytoolz.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "unique_everseen.X.time_noargs_fewduplicates_consume",
+        "pretty_name": "unique_everseen.X.time_noargs_fewduplicates_consume('pydash.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.010252353999999997,
+        "name": "unique_everseen.X.time_noargs_fewduplicates_consume",
+        "pretty_name": "unique_everseen.X.time_noargs_fewduplicates_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "unique_everseen.X.time_noargs_fewduplicates_consume",
+        "pretty_name": "unique_everseen.X.time_noargs_fewduplicates_consume('alt1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0033646400000000008,
+        "name": "unique_everseen.X.time_noargs_manyduplicates",
+        "pretty_name": "unique_everseen.X.time_noargs_manyduplicates('iteration_utilities.unique_everseen')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.004848712,
+        "name": "unique_everseen.X.time_noargs_manyduplicates",
+        "pretty_name": "unique_everseen.X.time_noargs_manyduplicates('toolz.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0030690239999999996,
+        "name": "unique_everseen.X.time_noargs_manyduplicates",
+        "pretty_name": "unique_everseen.X.time_noargs_manyduplicates('cytoolz.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.09185731999999999,
+        "name": "unique_everseen.X.time_noargs_manyduplicates",
+        "pretty_name": "unique_everseen.X.time_noargs_manyduplicates('pydash.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.006168922000000001,
+        "name": "unique_everseen.X.time_noargs_manyduplicates",
+        "pretty_name": "unique_everseen.X.time_noargs_manyduplicates('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003731872999999999,
+        "name": "unique_everseen.X.time_noargs_manyduplicates",
+        "pretty_name": "unique_everseen.X.time_noargs_manyduplicates('alt1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003400725,
+        "name": "unique_everseen.X.time_noargs_manyduplicates_consume",
+        "pretty_name": "unique_everseen.X.time_noargs_manyduplicates_consume('iteration_utilities.unique_everseen')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.004984385,
+        "name": "unique_everseen.X.time_noargs_manyduplicates_consume",
+        "pretty_name": "unique_everseen.X.time_noargs_manyduplicates_consume('toolz.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 2,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.00329451,
+        "name": "unique_everseen.X.time_noargs_manyduplicates_consume",
+        "pretty_name": "unique_everseen.X.time_noargs_manyduplicates_consume('cytoolz.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 3,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "unique_everseen.X.time_noargs_manyduplicates_consume",
+        "pretty_name": "unique_everseen.X.time_noargs_manyduplicates_consume('pydash.unique')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 4,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.006191202,
+        "name": "unique_everseen.X.time_noargs_manyduplicates_consume",
+        "pretty_name": "unique_everseen.X.time_noargs_manyduplicates_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 5,
+        "last_err": null,
+        "last_rev": null,
+        "last_value": null,
+        "name": "unique_everseen.X.time_noargs_manyduplicates_consume",
+        "pretty_name": "unique_everseen.X.time_noargs_manyduplicates_consume('alt1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003553183000000001,
+        "name": "unique_justseen.X.time_keyabs",
+        "pretty_name": "unique_justseen.X.time_keyabs('iteration_utilities.unique_justseen')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.012062141999999998,
+        "name": "unique_justseen.X.time_keyabs",
+        "pretty_name": "unique_justseen.X.time_keyabs('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.003387574,
+        "name": "unique_justseen.X.time_keyabs_consume",
+        "pretty_name": "unique_justseen.X.time_keyabs_consume('iteration_utilities.unique_justseen')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.011620356999999996,
+        "name": "unique_justseen.X.time_keyabs_consume",
+        "pretty_name": "unique_justseen.X.time_keyabs_consume('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0024115600000000005,
+        "name": "unique_justseen.X.time_noargs",
+        "pretty_name": "unique_justseen.X.time_noargs('iteration_utilities.unique_justseen')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.011916244000000003,
+        "name": "unique_justseen.X.time_noargs",
+        "pretty_name": "unique_justseen.X.time_noargs('old1')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 0,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.0022341830000000003,
+        "name": "unique_justseen.X.time_noargs_consume",
+        "pretty_name": "unique_justseen.X.time_noargs_consume('iteration_utilities.unique_justseen')",
+        "prev_value": null
+    },
+    {
+        "change_rev": null,
+        "idx": 1,
+        "last_err": 0.0,
+        "last_rev": 550,
+        "last_value": 0.011344956,
+        "name": "unique_justseen.X.time_noargs_consume",
+        "pretty_name": "unique_justseen.X.time_noargs_consume('old1')",
+        "prev_value": null
+    }
+]
