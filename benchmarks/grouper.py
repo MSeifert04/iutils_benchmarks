@@ -6,10 +6,15 @@
 #
 # =============================================================================
 
-from iteration_utilities import PY2, consume
+from iteration_utilities import consume
 from itertools import islice
 
-if PY2:
+try:
+    from iteration_utilities import EQ_PY2
+except ImportError:
+    from iteration_utilities import PY2 as EQ_PY2
+
+if EQ_PY2:
     from itertools import izip_longest as zip_longest
 else:
     from itertools import zip_longest
@@ -75,7 +80,7 @@ def nx_itertools_chunk():
 def old1():
     def grouper(iterable, n, fillvalue=None):
         args = [iter(iterable)] * n
-        if PY2:
+        if EQ_PY2:
             return zip_longest(fillvalue=fillvalue, *args)
         else:
             return zip_longest(*args, fillvalue=fillvalue)

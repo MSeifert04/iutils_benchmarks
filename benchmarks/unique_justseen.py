@@ -6,13 +6,17 @@
 #
 # =============================================================================
 
-from iteration_utilities import PY2, consume
+from iteration_utilities import consume
 from itertools import groupby
 from operator import itemgetter
 import random
 
+try:
+    from iteration_utilities import EQ_PY2
+except ImportError:
+    from iteration_utilities import PY2 as EQ_PY2
 
-if PY2:
+if EQ_PY2:
     from itertools import imap as map
 
 # =============================================================================

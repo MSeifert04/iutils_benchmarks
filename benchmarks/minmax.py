@@ -6,10 +6,14 @@
 #
 # =============================================================================
 
-from iteration_utilities import PY2
 import random
 
-if PY2:
+try:
+    from iteration_utilities import EQ_PY2
+except ImportError:
+    from iteration_utilities import PY2 as EQ_PY2
+
+if EQ_PY2:
     from itertools import izip_longest as zip_longest
 else:
     from itertools import zip_longest

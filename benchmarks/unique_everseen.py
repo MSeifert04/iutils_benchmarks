@@ -6,10 +6,15 @@
 #
 # =============================================================================
 
-from iteration_utilities import PY2, square, consume
+from iteration_utilities import square, consume
 import random
 
-if PY2:
+try:
+    from iteration_utilities import EQ_PY2
+except ImportError:
+    from iteration_utilities import PY2 as EQ_PY2
+
+if EQ_PY2:
     from itertools import ifilterfalse as filterfalse
 else:
     from itertools import filterfalse

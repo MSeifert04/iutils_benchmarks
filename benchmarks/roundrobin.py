@@ -6,9 +6,14 @@
 #
 # =============================================================================
 
-from iteration_utilities import PY2, consume
+from iteration_utilities import consume
 from itertools import cycle, islice
 import random
+
+try:
+    from iteration_utilities import EQ_PY2
+except ImportError:
+    from iteration_utilities import PY2 as EQ_PY2
 
 # =============================================================================
 #
@@ -44,7 +49,7 @@ def old1():
     def roundrobin(*iterables):
         # Recipe credited to George Sakkis
         pending = len(iterables)
-        if PY2:
+        if EQ_PY2:
             nexts = cycle(iter(it).next for it in iterables)
         else:
             nexts = cycle(iter(it).__next__ for it in iterables)
